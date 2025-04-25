@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import { StarlightPageProps } from '@astrojs/starlight/props';
+import BaseLayout from '@astrojs/starlight/layouts/BaseLayout.astro';
+
+const allDocs = await getCollection('docs');
+
+const diaryEntries = allDocs
+  .filter(entry => entry.id.startsWith('diario/diary/'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const frontmatter: StarlightPageProps['frontmatter'] = {
+  title: 'Pyragogical Diary',
+  description: 'Co-creation log entries between humans and AI.',
+};
+---
+
+<BaseLayout frontmatter={frontmatter}>
+  <h1>{frontmatter.title}</h1>
+  <p>{frontmatter.description}</p>
+
+  <ul>
+    {diaryEntries.map(entry => (
+      <li>
+        <a href={`/docs/${entry.slug}/`}>{entry.data.title}</a>
+        <small> — {entry.data.date.toLocaleDateString()}</small>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+

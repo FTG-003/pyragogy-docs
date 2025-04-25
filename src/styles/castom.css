@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* src/styles/custom.css */
+
+/* Target list items within the main markdown content area */
+.sl-markdown-content ul>li:not(:last-child),
+.sl-markdown-content ol>li:not(:last-child) {
+    /* Add padding below the item content but before the border */
+    padding-bottom: var(--sl-sp-6);
+    /* Adjust spacing as needed e.g., 1rem, 1.5rem */
+
+    /* Add margin below the border but before the next item */
+    margin-bottom: var(--sl-sp-6);
+    /* Adjust spacing as needed - match padding-bottom for symmetry */
+
+    /* The separator line - use Starlight's border color variables */
+    border-bottom: 1px solid var(--sl-color-hairline);
+    /* or var(--sl-color-border) for slightly darker */
+}
+
+/* Optional: Ensure consistent spacing for items *without* a border */
+.sl-markdown-content ul>li,
+.sl-markdown-content ol>li {
+    /* You might want some default bottom margin if list items feel too close normally */
+    /* margin-bottom: var(--sl-sp-4); */
+}

@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+const posts = await getCollection('docs/diario/diary');
+---
+
+<style>
+  .post-entry {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #f9f9f9;
+  }
+
+  .post-entry h2 {
+    margin: 0;
+  }
+
+  .tags {
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #eef;
+    color: #003366;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+</style>
+
+<h1>📔 Pyragogical Diary</h1>
+<p>This is our evolving journal of AI-human co-creation.</p>
+
+{posts
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+  .map(post => (
+    <div class="post-entry">
+      <h2><a href={`/docs/diario/diary/${post.slug}`}>{post.data.title}</a></h2>
+      <small>{new Date(post.data.date).toLocaleDateString()}</small>
+
+      {post.data.tags && (
+        <div class="tags">
+          {post.data.tags.map(tag => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      )}
+    </div>
+))}

@@ -1,0 +1,60 @@
+---
+title: Pyria
+description: "Explore how the PeeragogyBot supports cognitive co-creation between humans and AI."
+---
+
+# 🤖 PeeragogyBot – Your AI Peer Tutor
+
+PeeragogyBot is an open-source conversational AI built to support **peer learning in the age of AI**.  
+It embodies the principles of Pyragogy by acting as a **reflective, supportive and co-creative agent** within any learning ecosystem.
+
+---
+
+## 🌟 Key Features
+
+- 💬 **Conversational**: Interact via natural language, guided by your own curiosity.
+- 🧠 **Reflective**: Designed to stimulate metacognition and cognitive co-creation.
+- 🛠️ **Modular**: Built with [Flowise](https://flowiseai.com/), fully customizable with your own tools and flows.
+- 🌐 **Deployable**: Host it locally or on platforms like Railway, Render, or Koyeb.
+- 🔐 **Privacy-respecting**: Temporary chat logs, optional database TTL, no hidden analytics.
+
+---
+
+## 🚀 How to Use
+
+1. Visit the public version at [peeragogybot.pyragogy.org](https://peeragogybot.pyragogy.org)
+2. Ask anything about the Pyragogy Manifesto, AI in education, or reflective practices.
+3. Customize your own instance using the [GitHub repo](https://github.com/FTG-003/PeeragogyBot-Flowise).
+
+---
+
+## 🧩 Architecture
+
+```plaintext
+User ↔️ PeeragogyBot (Flowise UI)
+        ↕
+    ToolAgent (OpenAI / Pinecone / MongoDB)
+        ↕
+  ReflectiveGPT, Retrieval, RAG Memory
+```
+
+---
+
+## 🛠️ Customize Your Flow
+
+You can modify:
+- The system prompt and tools
+- Embedded documents (Manifesto, Timeline, Handbook)
+- Data logging and session storage (TTL in MongoDB or Neon)
+
+---
+
+## 🤝 Join the Project
+
+This is part of the broader **Pyragogy Open Source Initiative**.  
+Feel free to:
+- Fork the [GitHub repo](https://github.com/FTG-003/PeeragogyBot-Flowise)
+- Propose improvements
+- Use it in your own community or classroom
+
+> Let’s reimagine learning—together, with AI.
