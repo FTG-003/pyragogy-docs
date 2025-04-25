@@ -1,0 +1,15 @@
+# Pyria Site Assistant — Prompt Library
+
+## General
+- "Suggest improvements for the homepage layout."
+- "Create a basic .mdx page template for a new section."
+- "Review sidebar organization for clarity."
+
+## Technical
+- "Check all internal links for broken paths."
+- "Propose Tailwind class refinements for mobile responsiveness."
+- "Optimize image usage across the site."
+
+## Content
+- "Suggest a better title for the 'Join the Crew' page."
+- "Propose a CTA section for user onboarding."

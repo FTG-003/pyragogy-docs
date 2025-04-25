@@ -1,0 +1,176 @@
+---
+title: Join the Pyragogy Crew
+description: Step into a living ecosystem of AI-human co-creation. Find your role, share your spark, and help us build the future of learning, together.
+---
+
+# Import necessary Astro components (adjust paths as needed)
+
+import RoleCard from '../../../../components/Card.astro';
+import Testimonial from '../../../../components/Testimonial.astro';
+import CallToAction from '../../../../components/CallToAction.astro';
+
+# import AnimatedBackground from '../components/AnimatedBackground.astro'; # Optional: For visual flair
+
+# MDX Frontmatter
+
+
+
+{/* Optional: Add a subtle animated background element */}
+{/* <AnimatedBackground /> */}
+
+<div class="pyragogy-join-page space-y-16"> {/* Add a wrapper for page-specific styling if needed */}
+
+  {/* --- Hero Section --- */}
+  <section class="text-center pt-8 pb-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 animate-gradient-x">
+      Join the Pyragogy Crew
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+      Become a vital node in a global network where human curiosity meets AI potential. We're not just building tools; we're cultivating a <strong class="font-semibold text-purple-600 dark:text-purple-400">living ecosystem</strong> for co-evolutionary learning.
+    </p>
+    {/* Optional: Add a small visual cue or animation here */}
+  </section>
+
+  {/* --- Why Join? Section --- */}
+  <section>
+    <h2 class="text-3xl font-semibold mb-6 text-center">✨ Why Step Aboard?</h2>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-lg mb-4">
+          Pyragogy is more than a framework – it's a <strong class="text-pink-600 dark:text-pink-400">playground for the possible</strong>. It's where structured peer learning (Peeragogy) dances with the generative power of AI. By joining, you plug into a current of:
+        </p>
+        <ul class="list-none space-y-3 pl-0">
+          <li class="flex items-start">
+            <span class="text-2xl mr-3">🌍</span>
+            <span><strong class="font-medium">Boundless Collaboration:</strong> Connect with educators, developers, artists, researchers, and lifelong learners across the globe, all driven by a shared passion for discovery.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-2xl mr-3">💡</span>
+            <span><strong class="font-medium">Meaningful Impact:</strong> Your contributions – code, curriculum, art, insights – directly shape tools and experiences that empower AI-human co-learning.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-2xl mr-3">🌱</span>
+            <span><strong class="font-medium">Continuous Co-Evolution:</strong> Learn and grow alongside AI partners and human peers in an environment built on curiosity, open sharing, and ethical exploration.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-2xl mr-3">💖</span>
+            <span><strong class="font-medium">Joyful Building:</strong> We believe the process should be as enriching as the outcome. Bring your unique spark, experiment freely, and find joy in co-creation.</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        {/* Placeholder for an illustration or animation */}
+        <img src="/images/join-illustration.svg" alt="Illustration showing diverse people and AI collaborating" class="w-full max-w-md mx-auto rounded-lg shadow-md dark:opacity-80" />
+        {/* Replace with actual image path */}
+      </div>
+    </div>
+  </section>
+
+  {/* --- Find Your Crew / Role Cards Section --- */}
+  <section>
+    <h2 class="text-3xl font-semibold mb-8 text-center">🧭 Find Your Crew: Where Do You Spark?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* These RoleCard components should have internal hover/focus animations */}
+      <RoleCard
+        title="The Educator"
+        icon="🍎"
+        description="Design transformative learning journeys. Pilot new AI-assisted pedagogical models. Craft curriculum that breathes."
+        color="blue"
+      />
+      <RoleCard
+        title="The Developer"
+        icon="⚙️"
+        description="Build intelligent learning tools, bots, and platforms. Integrate AI ethically and creatively. Contribute to our open-source codebase."
+        color="green"
+      />
+      <RoleCard
+        title="The Artist & Creator"
+        icon="🎨"
+        description="Shape the aesthetics and narrative of Pyragogy. Design engaging interfaces. Weave ethical considerations into expressive tech."
+        color="yellow"
+      />
+      <RoleCard
+        title="The Researcher"
+        icon="🔬"
+        description="Explore the frontiers of human-AI cognition, collaboration, and learning science. Share insights and guide our evidence-based practices."
+        color="purple"
+      />
+      <RoleCard
+        title="The Learner & Explorer"
+        icon="🚀"
+        description="Embark on learning expeditions using Pyragogy. Share your experiences, provide feedback, and inspire others by showing what's possible."
+        color="red"
+      />
+      <RoleCard
+        title="The Community Weaver"
+        icon="🕸️"
+        description="Facilitate dialogues, organize events, onboard newcomers, and strengthen the connective tissue of our global PeerGang."
+        color="teal"
+      />
+    </div>
+    <p class="text-center mt-6 text-gray-600 dark:text-gray-400">...or blaze your own trail. Roles are fluid, hats are many!</p>
+  </section>
+
+  {/* --- Ways to Co-Create Section --- */}
+  <section>
+    <h2 class="text-3xl font-semibold mb-6 text-center">🚀 How You Can Co-Create</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <span class="text-4xl mb-3 block">🌱</span>
+        <h3 class="text-xl font-semibold mb-2">Learn & Experiment</h3>
+        <p class="text-gray-600 dark:text-gray-300">Use the <a href="https://peeragogy.org" class="text-blue-600 dark:text-blue-400 hover:underline">Manifesto</a> as your compass. Start a project, document your journey.</p>
+      </div>
+      <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <span class="text-4xl mb-3 block">💬</span>
+        <h3 class="text-xl font-semibold mb-2">Connect & Collaborate</h3>
+        <p class="text-gray-600 dark:text-gray-300">Join the <a href="mailto:ftg003@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">PeerGang discussions</a>. Participate in community projects and co-design sessions.</p>
+      </div>
+      <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <span class="text-4xl mb-3 block">⚒️</span>
+        <h3 class="text-xl font-semibold mb-2">Build & Remix</h3>
+        <p class="text-gray-600 dark:text-gray-300">Contribute code, content, or designs. All resources are open – adapt and share back!</p>
+      </div>
+    </div>
+    <p class="text-center mt-6">
+      <a href="https://peeragogy.org/stories" class="text-lg text-pink-600 dark:text-pink-400 hover:underline font-medium">📣 Share your Pyragogy Story →</a> - Inspire the ecosystem!
+    </p>
+  </section>
+
+  {/* --- Stories / Testimonials Section --- */}
+  <section class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-800 dark:to-slate-900 py-12 px-6 rounded-lg">
+    <h2 class="text-3xl font-semibold mb-8 text-center">🌀 Echoes from the Ecosystem</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {/* Placeholder Testimonials - Replace with real ones */}
+      <Testimonial quote="Pyragogy opened my eyes to how AI could be a partner in my classroom, not just a tool. My students are more engaged than ever." author="Anya Sharma" role="Educator, Pilot Program" />
+      <Testimonial quote="Contributing to the open-source Pyragogy tools was incredibly rewarding. Seeing the code come alive in learning experiments is pure magic." author="Ben Carter" role="Developer & PeerGang Member" />
+      {/* Add more Testimonial components as needed */}
+    </div>
+    {/* Maybe add a link to a dedicated stories page */}
+    <p class="text-center mt-8">
+        <a href="https://peeragogy.org/stories" class="text-blue-600 dark:text-blue-400 hover:underline">See more stories...</a>
+    </p>
+  </section>
+
+  {/* --- Final Call to Action --- */}
+  <section class="text-center py-12">
+    <blockquote class="text-2xl italic text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8 border-l-4 border-purple-500 pl-4">
+      “Learning isn’t something we receive. It’s something we <strong class="font-semibold text-purple-600 dark:text-purple-400">co-create</strong>.”
+    </blockquote>
+
+    <h2 class="text-4xl font-bold mb-4">Ready to Join the Expedition?</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
+      Your perspective matters. Your ideas spark ripples. Your collaboration fuels the movement. Let's weave this future, together.
+    </p>
+
+    {/* Use a prominent CallToAction component */}
+    <CallToAction href="https://pyragogy.org/join" text="Apply or Collaborate Now" />
+
+    <p class="mt-12 text-sm text-gray-500 dark:text-gray-400">
+      *This initiative is coordinated by humans and AI. You're not just joining a team; you're stepping into a co-evolutionary partnership.*
+    </p>
+  </section>
+
+</div> {/* End of pyragogy-join-page wrapper */}
+
+---
+# --- END OF FILE join.mdx ---
