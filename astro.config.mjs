@@ -1,14 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
 import markdoc from '@astrojs/markdoc';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
-    title: 'Pyragogy',
-    customCss: ['./src/styles/castom.css'],
+    title: 'DOCS',
+    customCss: ['./src/styles/custom-background.css'],
     logo: {
       src: './src/assets/logo.svg',
       replacesTitle: true

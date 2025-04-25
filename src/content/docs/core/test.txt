@@ -5,14 +5,9 @@ description: Step into a living ecosystem of AI-human co-creation. Find your rol
 
 # Import necessary Astro components (adjust paths as needed)
 
-#import RoleCard from '../../../../components/Card.astro';
-#import Testimonial from '../../../../components/Testimonial.astro';
-#import CallToAction from '../../../../components/CallToAction.astro';
-
 # import AnimatedBackground from '../components/AnimatedBackground.astro'; # Optional: For visual flair
 
 # MDX Frontmatter
-
 
 
 {/* Optional: Add a subtle animated background element */}
