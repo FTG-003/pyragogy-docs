@@ -1,7 +1,46 @@
-body {
-  background-image: url('/images/sfondo-1.png');
+@layer base, starlight, theme, components, utilities;
+@import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+body.css-homepage {
+    /* --- Custom Background Image --- */
+    background-image: url('/public/images/blue-sky.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* --- Reset Starlight background variable --- */
+    --sl-color-bg: transparent;
+
+    /* --- Fallback background color --- */
+    background-color: #cccccc;
+}
+
+/* src/styles/custom.css */
+
+/* Target the HTML element ONLY when the body has the 'splash' class */
+body.splash html {
+  /* Add your background styles here (image, gradient, etc.) */
+  background-image: url('/images/your-homepage-background.jpg');
   background-size: cover;
-  background-position: center;y
-  background-repeat: no-repeat;y
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  --sl-color-bg: transparent;
+  background-color: #cccccc;
+
+  /* Or Gradient Example: */
+  /* background-image: linear-gradient(to bottom, #005aa7, #fffde4); */
+  /* background-attachment: fixed; */
+  /* --sl-color-bg: transparent; */
+}
+
+/* Optional: Adjust text colors etc. for the splash page */
+body.splash {
+  /* color: white; */
+}
+body.splash main {
+    /* background-color: transparent; */ /* If needed */
 }
