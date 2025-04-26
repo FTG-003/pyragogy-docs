@@ -1,0 +1,54 @@
+/* src/styles/theme.css */
+
+/* Custom Theme: Astro Docs Style */
+
+:root {
+    /* Primary Colors */
+    --sl-color-accent-low: #e0f2fe;
+    --sl-color-accent: #38bdf8;
+    --sl-color-accent-high: #0ea5e9;
+    --sl-color-text: #0f172a;
+    --sl-color-text-invert: #ffffff;
+
+    /* Border Radius */
+    --sl-border-radius: 0.75rem;
+
+    /* Typography */
+    --sl-font-body: 'Inter', system-ui, sans-serif;
+    --sl-font-heading: 'Inter', system-ui, sans-serif;
+
+    /* Padding */
+    --sl-spacing-vertical: 2rem;
+}
+
+/* Dark Mode */
+:root[data-theme="dark"] {
+    --sl-color-accent-low: #0f172a;
+    --sl-color-accent: #38bdf8;
+    --sl-color-accent-high: #7dd3fc;
+    --sl-color-text: #e2e8f0;
+    --sl-color-text-invert: #0f172a;
+}
+
+/* Navbar Tabs */
+.navbar-tab {
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    transition: border-color 0.2s;
+}
+
+.navbar-tab:hover {
+    border-color: var(--sl-color-accent);
+}
+
+/* Sidebar Sections */
+.sidebar-section {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-section>h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--sl-color-accent-high);
+}

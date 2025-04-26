@@ -1,25 +1,32 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{astro,html,js,jsx,ts,tsx}"],
+// tailwind.config.ts
+
+import type { Config } from 'tailwindcss';
+import typography from '@tailwindcss/typography';
+
+const config: Config = {
+  content: ['./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx,css}'],
   theme: {
     extend: {
       colors: {
-        pyragogy: {
-          light: '#f9a825', // giallo oro
-          dark: '#0d47a1',  // blu profondo
+        accent: {
+          light: '#e0f2fe',
+          DEFAULT: '#38bdf8',
+          dark: '#0ea5e9',
+        },
+        text: {
+          light: '#0f172a',
+          dark: '#e2e8f0',
         },
       },
-      fontFamily: {
-        pyragogy: ['"Inter"', 'sans-serif'],
-      },
       borderRadius: {
-        '2xl': '2rem',
+        'xl': '0.75rem',
       },
-      boxShadow: {
-        glow: '0 0 20px rgba(255, 165, 0, 0.4)',
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [typography],
+};
 
+export default config;

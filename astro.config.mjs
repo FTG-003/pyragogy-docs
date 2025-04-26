@@ -1,61 +1,46 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import markdoc from '@astrojs/markdoc';
 import mdx from '@astrojs/mdx';
+import markdoc from '@astrojs/markdoc';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import tailwindcss from '@tailwindcss/vite';
+import { sidebar } from './src/content/sidebar';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       title: 'DOCS',
-      customCss: ['./src/styles/global.css'],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' }],
+      customCss: [
+        './src/styles/global.css',
+        './src/styles/theme.css',
+      ],
       logo: {
         src: './src/assets/logo.svg',
-        replacesTitle: true
+        replacesTitle: true,
       },
-      sidebar: [
+      sidebar,
+      markdown: {
+        headingLinks: true, // ✅ Ora solo headingLinks o future simple options
+      },
+      head: [
         {
-          label: 'Welcome, World!',
-          items: [
-            { label: 'Why Pyragogy', slug: 'core/why' },
-            { label: 'Background', slug: 'core/background' },
-            { label: 'Existing AI Models in Education', slug: 'core/models' },
-
-
-            { label: 'Manifesto', slug: 'core/manifesto' },
-            { label: 'Core Principles', slug: 'core/principi' },
-          ]
+          tag: 'link',
+          attrs: {
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css',
+          },
         },
-        {
-          label: 'Projects',
-          items: [
-            {
-              label: 'Peeragogy Handbook AI',
-              items: [
-                { label: 'Vision', slug: 'projects/pyria' },
-                { label: 'Analysis and Plan', slug: 'projects/village' },
-              ],
-            },
-            { 
-              label: 'PeeragogyBot', 
-              slug: 'projects/peeragogy_bot' 
-            },
-          ]
-        },
-        {
-          label: 'Get Involved',
-          items: [
-            { label: 'Join the Crew', slug: 'core/join' },
-          ]
-        }
-      ]
+      ],
     }),
     markdoc(),
-    mdx() 
+    mdx({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
   ],
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });
