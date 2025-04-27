@@ -23,6 +23,8 @@ export default defineConfig({
       sidebar,
       markdown: {
         headingLinks: true, // ✅ Ora solo headingLinks o future simple options
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
       head: [
         {

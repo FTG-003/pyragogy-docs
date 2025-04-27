@@ -6653,6 +6653,17 @@
 │   │   ├── license
 │   │   ├── package.json
 │   │   └── readme.md
+│   ├── hast-util-from-dom
+│   │   ├── index.d.ts
+│   │   ├── index.d.ts.map
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.d.ts.map
+│   │   │   └── index.js
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
 │   ├── hast-util-from-html
 │   │   ├── index.d.ts
 │   │   ├── index.js
@@ -6665,6 +6676,17 @@
 │   │   │   ├── index.js
 │   │   │   ├── types.d.ts
 │   │   │   └── types.js
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── hast-util-from-html-isomorphic
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── browser.d.ts
+│   │   │   ├── browser.js
+│   │   │   ├── index.d.ts
+│   │   │   └── index.js
 │   │   ├── license
 │   │   ├── package.json
 │   │   └── readme.md
@@ -7436,6 +7458,233 @@
 │   │   ├── LICENSE
 │   │   ├── package.json
 │   │   └── README.md
+│   ├── katex
+│   │   ├── cli.js
+│   │   ├── contrib
+│   │   │   ├── auto-render
+│   │   │   │   ├── auto-render.js
+│   │   │   │   ├── index.html
+│   │   │   │   ├── README.md
+│   │   │   │   ├── splitAtDelimiters.js
+│   │   │   │   └── test
+│   │   │   │       └── auto-render-spec.js
+│   │   │   ├── copy-tex
+│   │   │   │   ├── copy-tex.js
+│   │   │   │   ├── index.html
+│   │   │   │   ├── katex2tex.js
+│   │   │   │   └── README.md
+│   │   │   ├── mathtex-script-type
+│   │   │   │   ├── mathtex-script-type.js
+│   │   │   │   └── README.md
+│   │   │   ├── mhchem
+│   │   │   │   ├── mhchem.js
+│   │   │   │   └── README.md
+│   │   │   └── render-a11y-string
+│   │   │       ├── render-a11y-string.js
+│   │   │       └── test
+│   │   │           └── render-a11y-string-spec.js
+│   │   ├── dist
+│   │   │   ├── contrib
+│   │   │   │   ├── auto-render.js
+│   │   │   │   ├── auto-render.min.js
+│   │   │   │   ├── auto-render.mjs
+│   │   │   │   ├── copy-tex.js
+│   │   │   │   ├── copy-tex.min.js
+│   │   │   │   ├── copy-tex.mjs
+│   │   │   │   ├── mathtex-script-type.js
+│   │   │   │   ├── mathtex-script-type.min.js
+│   │   │   │   ├── mathtex-script-type.mjs
+│   │   │   │   ├── mhchem.js
+│   │   │   │   ├── mhchem.min.js
+│   │   │   │   ├── mhchem.mjs
+│   │   │   │   ├── render-a11y-string.js
+│   │   │   │   ├── render-a11y-string.min.js
+│   │   │   │   └── render-a11y-string.mjs
+│   │   │   ├── fonts
+│   │   │   │   ├── KaTeX_AMS-Regular.ttf
+│   │   │   │   ├── KaTeX_AMS-Regular.woff
+│   │   │   │   ├── KaTeX_AMS-Regular.woff2
+│   │   │   │   ├── KaTeX_Caligraphic-Bold.ttf
+│   │   │   │   ├── KaTeX_Caligraphic-Bold.woff
+│   │   │   │   ├── KaTeX_Caligraphic-Bold.woff2
+│   │   │   │   ├── KaTeX_Caligraphic-Regular.ttf
+│   │   │   │   ├── KaTeX_Caligraphic-Regular.woff
+│   │   │   │   ├── KaTeX_Caligraphic-Regular.woff2
+│   │   │   │   ├── KaTeX_Fraktur-Bold.ttf
+│   │   │   │   ├── KaTeX_Fraktur-Bold.woff
+│   │   │   │   ├── KaTeX_Fraktur-Bold.woff2
+│   │   │   │   ├── KaTeX_Fraktur-Regular.ttf
+│   │   │   │   ├── KaTeX_Fraktur-Regular.woff
+│   │   │   │   ├── KaTeX_Fraktur-Regular.woff2
+│   │   │   │   ├── KaTeX_Main-BoldItalic.ttf
+│   │   │   │   ├── KaTeX_Main-BoldItalic.woff
+│   │   │   │   ├── KaTeX_Main-BoldItalic.woff2
+│   │   │   │   ├── KaTeX_Main-Bold.ttf
+│   │   │   │   ├── KaTeX_Main-Bold.woff
+│   │   │   │   ├── KaTeX_Main-Bold.woff2
+│   │   │   │   ├── KaTeX_Main-Italic.ttf
+│   │   │   │   ├── KaTeX_Main-Italic.woff
+│   │   │   │   ├── KaTeX_Main-Italic.woff2
+│   │   │   │   ├── KaTeX_Main-Regular.ttf
+│   │   │   │   ├── KaTeX_Main-Regular.woff
+│   │   │   │   ├── KaTeX_Main-Regular.woff2
+│   │   │   │   ├── KaTeX_Math-BoldItalic.ttf
+│   │   │   │   ├── KaTeX_Math-BoldItalic.woff
+│   │   │   │   ├── KaTeX_Math-BoldItalic.woff2
+│   │   │   │   ├── KaTeX_Math-Italic.ttf
+│   │   │   │   ├── KaTeX_Math-Italic.woff
+│   │   │   │   ├── KaTeX_Math-Italic.woff2
+│   │   │   │   ├── KaTeX_SansSerif-Bold.ttf
+│   │   │   │   ├── KaTeX_SansSerif-Bold.woff
+│   │   │   │   ├── KaTeX_SansSerif-Bold.woff2
+│   │   │   │   ├── KaTeX_SansSerif-Italic.ttf
+│   │   │   │   ├── KaTeX_SansSerif-Italic.woff
+│   │   │   │   ├── KaTeX_SansSerif-Italic.woff2
+│   │   │   │   ├── KaTeX_SansSerif-Regular.ttf
+│   │   │   │   ├── KaTeX_SansSerif-Regular.woff
+│   │   │   │   ├── KaTeX_SansSerif-Regular.woff2
+│   │   │   │   ├── KaTeX_Script-Regular.ttf
+│   │   │   │   ├── KaTeX_Script-Regular.woff
+│   │   │   │   ├── KaTeX_Script-Regular.woff2
+│   │   │   │   ├── KaTeX_Size1-Regular.ttf
+│   │   │   │   ├── KaTeX_Size1-Regular.woff
+│   │   │   │   ├── KaTeX_Size1-Regular.woff2
+│   │   │   │   ├── KaTeX_Size2-Regular.ttf
+│   │   │   │   ├── KaTeX_Size2-Regular.woff
+│   │   │   │   ├── KaTeX_Size2-Regular.woff2
+│   │   │   │   ├── KaTeX_Size3-Regular.ttf
+│   │   │   │   ├── KaTeX_Size3-Regular.woff
+│   │   │   │   ├── KaTeX_Size3-Regular.woff2
+│   │   │   │   ├── KaTeX_Size4-Regular.ttf
+│   │   │   │   ├── KaTeX_Size4-Regular.woff
+│   │   │   │   ├── KaTeX_Size4-Regular.woff2
+│   │   │   │   ├── KaTeX_Typewriter-Regular.ttf
+│   │   │   │   ├── KaTeX_Typewriter-Regular.woff
+│   │   │   │   └── KaTeX_Typewriter-Regular.woff2
+│   │   │   ├── katex.css
+│   │   │   ├── katex.js
+│   │   │   ├── katex.min.css
+│   │   │   ├── katex.min.js
+│   │   │   ├── katex.mjs
+│   │   │   └── README.md
+│   │   ├── katex.js
+│   │   ├── LICENSE
+│   │   ├── package.json
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── buildCommon.js
+│   │   │   ├── buildHTML.js
+│   │   │   ├── buildMathML.js
+│   │   │   ├── buildTree.js
+│   │   │   ├── defineEnvironment.js
+│   │   │   ├── defineFunction.js
+│   │   │   ├── defineMacro.js
+│   │   │   ├── delimiter.js
+│   │   │   ├── domTree.js
+│   │   │   ├── environments
+│   │   │   │   ├── array.js
+│   │   │   │   └── cd.js
+│   │   │   ├── environments.js
+│   │   │   ├── fontMetricsData.js
+│   │   │   ├── fontMetrics.js
+│   │   │   ├── fonts
+│   │   │   │   ├── default.cfg
+│   │   │   │   ├── generate_fonts.py
+│   │   │   │   ├── lib
+│   │   │   │   │   ├── Extra.otf
+│   │   │   │   │   └── Space.ttx
+│   │   │   │   ├── makeBlacker
+│   │   │   │   ├── makeFF
+│   │   │   │   ├── Makefile
+│   │   │   │   └── xbbold.mf
+│   │   │   ├── functions
+│   │   │   │   ├── accent.js
+│   │   │   │   ├── accentunder.js
+│   │   │   │   ├── arrow.js
+│   │   │   │   ├── char.js
+│   │   │   │   ├── color.js
+│   │   │   │   ├── cr.js
+│   │   │   │   ├── def.js
+│   │   │   │   ├── delimsizing.js
+│   │   │   │   ├── enclose.js
+│   │   │   │   ├── environment.js
+│   │   │   │   ├── font.js
+│   │   │   │   ├── genfrac.js
+│   │   │   │   ├── hbox.js
+│   │   │   │   ├── horizBrace.js
+│   │   │   │   ├── href.js
+│   │   │   │   ├── html.js
+│   │   │   │   ├── htmlmathml.js
+│   │   │   │   ├── includegraphics.js
+│   │   │   │   ├── kern.js
+│   │   │   │   ├── lap.js
+│   │   │   │   ├── mathchoice.js
+│   │   │   │   ├── math.js
+│   │   │   │   ├── mclass.js
+│   │   │   │   ├── operatorname.js
+│   │   │   │   ├── op.js
+│   │   │   │   ├── ordgroup.js
+│   │   │   │   ├── overline.js
+│   │   │   │   ├── phantom.js
+│   │   │   │   ├── pmb.js
+│   │   │   │   ├── raisebox.js
+│   │   │   │   ├── relax.js
+│   │   │   │   ├── rule.js
+│   │   │   │   ├── sizing.js
+│   │   │   │   ├── smash.js
+│   │   │   │   ├── sqrt.js
+│   │   │   │   ├── styling.js
+│   │   │   │   ├── supsub.js
+│   │   │   │   ├── symbolsOp.js
+│   │   │   │   ├── symbolsOrd.js
+│   │   │   │   ├── symbolsSpacing.js
+│   │   │   │   ├── tag.js
+│   │   │   │   ├── text.js
+│   │   │   │   ├── underline.js
+│   │   │   │   ├── utils
+│   │   │   │   │   └── assembleSupSub.js
+│   │   │   │   ├── vcenter.js
+│   │   │   │   └── verb.js
+│   │   │   ├── functions.js
+│   │   │   ├── Lexer.js
+│   │   │   ├── MacroExpander.js
+│   │   │   ├── macros.js
+│   │   │   ├── mathMLTree.js
+│   │   │   ├── metrics
+│   │   │   │   ├── extract_tfms.py
+│   │   │   │   ├── extract_ttfs.py
+│   │   │   │   ├── format_json.py
+│   │   │   │   ├── mapping.pl
+│   │   │   │   ├── parse_tfm.py
+│   │   │   │   └── README.md
+│   │   │   ├── Namespace.js
+│   │   │   ├── Options.js
+│   │   │   ├── ParseError.js
+│   │   │   ├── parseNode.js
+│   │   │   ├── Parser.js
+│   │   │   ├── parseTree.js
+│   │   │   ├── Settings.js
+│   │   │   ├── SourceLocation.js
+│   │   │   ├── spacingData.js
+│   │   │   ├── stretchy.js
+│   │   │   ├── Style.js
+│   │   │   ├── styles
+│   │   │   │   ├── fonts.scss
+│   │   │   │   └── katex.scss
+│   │   │   ├── svgGeometry.js
+│   │   │   ├── symbols.js
+│   │   │   ├── Token.js
+│   │   │   ├── tree.js
+│   │   │   ├── types.js
+│   │   │   ├── unicodeAccents.js
+│   │   │   ├── unicodeScripts.js
+│   │   │   ├── unicodeSupOrSub.js
+│   │   │   ├── unicodeSymbols.js
+│   │   │   ├── units.js
+│   │   │   ├── utils.js
+│   │   │   └── wide-character.js
+│   │   └── types
+│   │       └── katex.d.ts
 │   ├── kleur
 │   │   ├── colors.d.ts
 │   │   ├── colors.js
@@ -8566,6 +8815,21 @@
 │   │   ├── zipObjectDeep.js
 │   │   ├── zipObject.js
 │   │   └── zipWith.js
+│   ├── lodash.castarray
+│   │   ├── index.js
+│   │   ├── LICENSE
+│   │   ├── package.json
+│   │   └── README.md
+│   ├── lodash.isplainobject
+│   │   ├── index.js
+│   │   ├── LICENSE
+│   │   ├── package.json
+│   │   └── README.md
+│   ├── lodash.merge
+│   │   ├── index.js
+│   │   ├── LICENSE
+│   │   ├── package.json
+│   │   └── README.md
 │   ├── lodash.topath
 │   │   ├── index.js
 │   │   ├── LICENSE
@@ -8893,6 +9157,15 @@
 │   │   ├── package.json
 │   │   └── readme.md
 │   ├── mdast-util-gfm-task-list-item
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── index.d.ts
+│   │   │   └── index.js
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── mdast-util-math
 │   │   ├── index.d.ts
 │   │   ├── index.js
 │   │   ├── lib
@@ -9674,6 +9947,33 @@
 │   │   ├── lib
 │   │   │   ├── html.d.ts
 │   │   │   ├── html.js
+│   │   │   ├── syntax.d.ts
+│   │   │   └── syntax.js
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── micromark-extension-math
+│   │   ├── dev
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   └── lib
+│   │   │       ├── html.d.ts
+│   │   │       ├── html.js
+│   │   │       ├── math-flow.d.ts
+│   │   │       ├── math-flow.js
+│   │   │       ├── math-text.d.ts
+│   │   │       ├── math-text.js
+│   │   │       ├── syntax.d.ts
+│   │   │       └── syntax.js
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── html.d.ts
+│   │   │   ├── html.js
+│   │   │   ├── math-flow.d.ts
+│   │   │   ├── math-flow.js
+│   │   │   ├── math-text.d.ts
+│   │   │   ├── math-text.js
 │   │   │   ├── syntax.d.ts
 │   │   │   └── syntax.js
 │   │   ├── license
@@ -12475,6 +12775,16 @@
 │   │   ├── license
 │   │   ├── package.json
 │   │   └── readme.md
+│   ├── rehype-katex
+│   │   ├── index.d.ts
+│   │   ├── index.d.ts.map
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.d.ts.map
+│   │   │   └── index.js
+│   │   ├── package.json
+│   │   └── readme.md
 │   ├── rehype-parse
 │   │   ├── index.d.ts
 │   │   ├── index.js
@@ -12532,6 +12842,14 @@
 │   │   │   ├── index.d.ts.map
 │   │   │   └── index.js
 │   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── remark-math
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── index.d.ts
+│   │   │   └── index.js
 │   │   ├── package.json
 │   │   └── readme.md
 │   ├── remark-mdx
@@ -15624,6 +15942,57 @@
 │   │   │   ├── LICENSE
 │   │   │   ├── package.json
 │   │   │   └── README.md
+│   │   ├── typography
+│   │   │   ├── LICENSE
+│   │   │   ├── node_modules
+│   │   │   │   └── postcss-selector-parser
+│   │   │   │       ├── API.md
+│   │   │   │       ├── CHANGELOG.md
+│   │   │   │       ├── dist
+│   │   │   │       │   ├── index.js
+│   │   │   │       │   ├── parser.js
+│   │   │   │       │   ├── processor.js
+│   │   │   │       │   ├── selectors
+│   │   │   │       │   │   ├── attribute.js
+│   │   │   │       │   │   ├── className.js
+│   │   │   │       │   │   ├── combinator.js
+│   │   │   │       │   │   ├── comment.js
+│   │   │   │       │   │   ├── constructors.js
+│   │   │   │       │   │   ├── container.js
+│   │   │   │       │   │   ├── guards.js
+│   │   │   │       │   │   ├── id.js
+│   │   │   │       │   │   ├── index.js
+│   │   │   │       │   │   ├── namespace.js
+│   │   │   │       │   │   ├── nesting.js
+│   │   │   │       │   │   ├── node.js
+│   │   │   │       │   │   ├── pseudo.js
+│   │   │   │       │   │   ├── root.js
+│   │   │   │       │   │   ├── selector.js
+│   │   │   │       │   │   ├── string.js
+│   │   │   │       │   │   ├── tag.js
+│   │   │   │       │   │   ├── types.js
+│   │   │   │       │   │   └── universal.js
+│   │   │   │       │   ├── sortAscending.js
+│   │   │   │       │   ├── tokenize.js
+│   │   │   │       │   ├── tokenTypes.js
+│   │   │   │       │   └── util
+│   │   │   │       │       ├── ensureObject.js
+│   │   │   │       │       ├── getProp.js
+│   │   │   │       │       ├── index.js
+│   │   │   │       │       ├── stripComments.js
+│   │   │   │       │       └── unesc.js
+│   │   │   │       ├── LICENSE-MIT
+│   │   │   │       ├── package.json
+│   │   │   │       ├── postcss-selector-parser.d.ts
+│   │   │   │       └── README.md
+│   │   │   ├── package.json
+│   │   │   ├── README.md
+│   │   │   └── src
+│   │   │       ├── index.d.ts
+│   │   │       ├── index.js
+│   │   │       ├── index.test.js
+│   │   │       ├── styles.js
+│   │   │       └── utils.js
 │   │   └── vite
 │   │       ├── dist
 │   │       │   ├── index.d.mts
@@ -16346,6 +16715,13 @@
 │   │   │   └── README.md
 │   │   ├── js-yaml
 │   │   │   ├── index.d.mts
+│   │   │   ├── index.d.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── package.json
+│   │   │   └── README.md
+│   │   ├── katex
+│   │   │   ├── contrib
+│   │   │   │   └── auto-render.d.ts
 │   │   │   ├── index.d.ts
 │   │   │   ├── LICENSE
 │   │   │   ├── package.json
@@ -17727,7 +18103,6 @@
 │       ├── license
 │       ├── package.json
 │       └── readme.md
-├── nuova-struttura.txt
 ├── package.json
 ├── package-lock.json
 ├── postcss.config.cjs
@@ -17739,6 +18114,7 @@
 │   │   ├── 1.svg
 │   │   ├── blue-sky.jpg
 │   │   ├── peeragogy_bot.webp
+│   │   ├── problems.png
 │   │   ├── sfondo-1.png
 │   │   └── sfondo-1.webp
 │   └── oops.webp
@@ -17841,43 +18217,53 @@
 │   │   └── Version.astro
 │   ├── content
 │   │   ├── config.ts
-│   │   └── docs
-│   │       ├── core
-│   │       │   ├── join.mdx
-│   │       │   ├── manifesto.mdx
-│   │       │   ├── principi.mdx
-│   │       │   ├── test.txt
-│   │       │   ├── why-pyragogy.md
-│   │       │   └── why-pyragogy.mdx
-│   │       ├── diario
-│   │       │   ├── Analisi_Tecniche_e_Ricerca
-│   │       │   ├── diario.astro
-│   │       │   ├── diary
-│   │       │   │   ├── 2025-04-24-diario-split-thebrain.md
-│   │       │   │   ├── 2025-04-24-inizio-diario-pyragogico.mdx
-│   │       │   │   └── index.md
-│   │       │   ├── Esperienze_Co-Creative
-│   │       │   ├── index.astro
-│   │       │   ├── my-first-entry.md
-│   │       │   ├── Progettazione_AI-Pyragogica
-│   │       │   └── Visioni_e_Riflessioni_Critiche
-│   │       ├── index.mdx
-│   │       ├── pages
-│   │       │   └── diario.astro
-│   │       ├── projects
-│   │       │   ├── peeragogt.md
-│   │       │   ├── peeragogy_bot.mdx
-│   │       │   └── pyria.mdx
-│   │       └── reference
-│   │           └── stili.mdx
+│   │   ├── docs
+│   │   │   ├── core
+│   │   │   │   ├── background.mdx
+│   │   │   │   ├── join.mdx
+│   │   │   │   ├── manifesto.mdx
+│   │   │   │   ├── models.mdx
+│   │   │   │   ├── principi.mdx
+│   │   │   │   ├── test.txt
+│   │   │   │   ├── why.mdx
+│   │   │   │   ├── why-pyragogy.txt
+│   │   │   │   └── why.txt
+│   │   │   ├── diario
+│   │   │   │   ├── Analisi_Tecniche_e_Ricerca
+│   │   │   │   ├── diario.astro
+│   │   │   │   ├── diary
+│   │   │   │   │   ├── 2025-04-24-diario-split-thebrain.md
+│   │   │   │   │   ├── 2025-04-24-inizio-diario-pyragogico.mdx
+│   │   │   │   │   ├── 2025-04-26-consolidamento-diario-cognitivo.md
+│   │   │   │   │   └── index.md
+│   │   │   │   ├── Esperienze_Co-Creative
+│   │   │   │   ├── index.astro
+│   │   │   │   ├── my-first-entry.md
+│   │   │   │   ├── Progettazione_AI-Pyragogica
+│   │   │   │   └── Visioni_e_Riflessioni_Critiche
+│   │   │   ├── esperimenti
+│   │   │   │   └── N-001.txt
+│   │   │   ├── index.mdx
+│   │   │   ├── pages
+│   │   │   │   └── diario.astro
+│   │   │   ├── projects
+│   │   │   │   ├── peeragogt.md
+│   │   │   │   ├── peeragogy_bot.mdx
+│   │   │   │   ├── pyria.mdx
+│   │   │   │   └── village.mdx
+│   │   │   └── reference
+│   │   │       └── stili.mdx
+│   │   └── sidebar.ts
 │   ├── content.config.ts
 │   ├── markdoc.config.mjs
 │   └── styles
 │       ├── castom.css
 │       ├── custom-background.css
-│       └── global.css
-├── struttura.txt
+│       ├── global.css
+│       └── theme.css
+├── struttura_
+├── struttura-sito.txt
 ├── tailwind.config.js
 └── to do
 
-2003 directories, 15878 files
+2051 directories, 16216 files
