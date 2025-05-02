@@ -1,0 +1,30 @@
+/* src/styles/custom.css */
+
+/* Target the html element only on the home page (splash page) */
+html.template-splash {
+  /* Path to your image in the public directory */
+  background-image: url('/images/background.png');
+
+  /* Ensure the background covers the entire page */
+  background-size: cover;
+
+  /* Center the background image */
+  background-position: center center;
+
+  /* Prevent the background image from repeating */
+  background-repeat: no-repeat;
+
+  /* Optional: Keep the background fixed while scrolling */
+  /* background-attachment: fixed; */
+
+  /* Optional: Add a fallback background color */
+  /* background-color: #f0f0f0; */
+}
+
+/* Optional: Adjust text color for readability over the background */
+/* You might need to target specific elements on the home page */
+/* body.template-splash .hero .tagline,
+body.template-splash .hero h1 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+} */

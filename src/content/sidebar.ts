@@ -42,7 +42,7 @@ group('Theories and Experiments', {
 group('Get Involved', {
     collapsed: true,
     items: [
-    { label: 'Join the Movement', link: 'core/join' },
+    { label: 'Join the Crew', link: 'core/join' },
   ],
 }),
 

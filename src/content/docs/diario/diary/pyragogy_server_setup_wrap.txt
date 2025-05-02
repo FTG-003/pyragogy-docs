@@ -1,0 +1,79 @@
+# Pyragogy Server Setup — v1.0 (27 April 2025)
+
+## 🔥 Obiettivo
+Mettere online **Flowise** in modo **protetto, sicuro e professionale** su dominio **pyragogy.org**,  
+con configurazione firewall, password di accesso, e certificato SSL Let's Encrypt.
+
+---
+
+## 📋 Azioni eseguite
+
+### 1. Firewall
+- Installato e attivato `ufw`.
+- Porte aperte:
+  - `22/tcp` (SSH)
+  - `80/tcp` (HTTP)
+  - `443/tcp` (HTTPS)
+  - `3000/tcp` (Flowise)
+- Regole IPv6 replicate correttamente.
+
+---
+
+### 2. Nginx Reverse Proxy + Auth Basic
+- Installato e configurato `nginx`.
+- Creato file `/etc/nginx/sites-available/flowise` con proxy_pass a `localhost:3000`.
+- Autenticazione basic (username: `fabry`, password custom) protetta tramite `.htpasswd`.
+- File `.htpasswd` creato in `/etc/nginx/.htpasswd`.
+
+---
+
+### 3. DNS Configuration
+- Sistemati i DNS di `pyragogy.org` su Porkbun:
+  - Aggiunto record A `@ → 116.203.156.25`
+  - Aggiunto record A `flowis.pyragogy.org → 116.203.156.25`
+- Pulizia record vecchi puntati su GitHub Pages.
+
+---
+
+### 4. HTTPS SSL - Let's Encrypt
+- Installato `certbot` con plugin `python3-certbot-nginx`.
+- Richiesto e installato certificato SSL per `pyragogy.org`.
+- Configurato redirect automatico HTTPS.
+- Verificato lucchetto verde HTTPS attivo su browser.
+
+---
+
+## 🛡️ Stato finale
+| Componente | Stato |
+|:---|:---|
+| Firewall attivo e sicuro | ✅ |
+| Flowise dietro auth basic | ✅ |
+| HTTPS SSL attivo su pyragogy.org | ✅ |
+| Nginx configurato correttamente | ✅ |
+| DNS corretti e puntati | ✅ |
+
+---
+
+## 🧠 Note future (possibili miglioramenti)
+- Aggiungere certificato SSL anche a `www.pyragogy.org` se necessario.
+- Automatizzare backup di Flowise.
+- Eventuale deploy su sottodominio (`flowise.pyragogy.org`) con HTTPS dedicato.
+- Setup monitoraggio uptime/server status.
+
+---
+
+# 🎯 Status finale:  
+**Pyragogy Server Operational — Secure, Professional, Ready for Growth 🚀**
+
+---
+
+# 🏷️ Tag Ufficiale Wrap
+
+```markdown
+<!-- gino-tag
+data: 2025-04-27
+versione: 1.0.0
+contesto: Primo setup server sicuro per Pyragogy.org con Flowise + Firewall + HTTPS
+tags: server-setup, nginx, certbot, flowise, pyragogy, sicurezza
+-->
+```
