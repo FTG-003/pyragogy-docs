@@ -14,7 +14,6 @@ export default defineConfig({
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' }],
       customCss: [
         './src/styles/global.css',
-        './src/styles/theme.css',
       ],
       logo: {
         src: './src/assets/logo.svg',

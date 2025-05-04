@@ -1,5 +1,4 @@
 // src/content/sidebar.ts
-
 import type { SidebarItem, StarlightUserConfig } from '@astrojs/starlight';
 
 /**
@@ -22,16 +21,15 @@ export const sidebar = [
     { label: 'Foundational Principles', link: 'core/principi' },
   ],
 }),
-group('Projects', {
+group('Open-Source AI', {
   items: [
     group('Peeragogy Handbook AI', {
         collapsed: true,
       items: [
-        { label: 'Pyria - AI Peer Companion', link: 'projects/pyria' },
         { label: 'Village - Agent Collaboration', link: 'projects/village' },
       ],
     }),
-    { label: 'PeeragogyBot Project', link: 'projects/peeragogy_bot' },
+    { label: 'Peeragogy ChatBot', link: 'projects/peeragogy_bot' },
   ],
 }),
 group('Theories and Experiments', {
