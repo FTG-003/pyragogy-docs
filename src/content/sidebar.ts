@@ -14,7 +14,7 @@ function group(label: string, options: Omit<SidebarItem, 'label'>): SidebarItem 
 export const sidebar = [
   group('Introduction', {
   items: [
-    { label: 'Why Pyragogy?', link: 'core/why' },
+    { label: 'Welcome to Pyragogy', link: 'core/why' },
     { label: 'Background and Vision', link: 'core/background' },
     { label: 'Cognitive Models', link: 'core/models' },
     { label: 'Pyragogy Manifesto', link: 'core/manifesto' },
