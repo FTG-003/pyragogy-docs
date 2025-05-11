@@ -1,5 +1,5 @@
 ---
-title: Welcome to Pyragogy
+title: Welcome to ✨Pyragogy
 description: "Pyragogy: A living ecosystem for cognitive symbiosis between humans and AI in collaborative learning."
 i18nReady: true
 ---
