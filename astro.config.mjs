@@ -33,6 +33,14 @@ export default defineConfig({
             href: 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css',
           },
         },
+        {
+          tag: 'script',
+          attrs: {
+            defer: true,
+            'data-domain': 'docs.pyragogy.org',
+            src: 'https://plausible.io/js/script.js'
+          }
+        }
       ],
     }),
     markdoc(),
