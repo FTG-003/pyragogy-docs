@@ -1,4 +1,3 @@
-// src/content/sidebar.ts
 import type { SidebarItem, StarlightUserConfig } from '@astrojs/starlight';
 
 /**
@@ -13,35 +12,39 @@ function group(label: string, options: Omit<SidebarItem, 'label'>): SidebarItem 
  */
 export const sidebar = [
   group('Introduction', {
-  items: [
-    { label: 'Welcome to Pyragogy', link: 'core/why' },
-    { label: 'Background and Vision', link: 'core/background' },
-    { label: 'Cognitive Models', link: 'core/models' },
-    { label: 'Pyragogy Manifesto', link: 'core/manifesto' },
-    { label: 'Foundational Principles', link: 'core/principi' },
-  ],
-}),
-group('Open-Source AI', {
-  items: [
-    group('Peeragogy Handbook AI', {
+    items: [
+      { label: 'Welcome to Pyragogy', link: 'core/why' },
+      { label: 'Background and Vision', link: 'core/background' },
+      { label: 'Cognitive Models', link: 'core/models' },
+      { label: 'Pyragogy Manifesto', link: 'core/manifesto' },
+      { label: 'Foundational Principles', link: 'core/principi' },
+    ],
+  }),
+  group('Research Meets Practice', {
+    items: [
+      { label: 'Pyragogy Meets FMAL', link: 'projects/pyragogy-fmal' },
+    ],
+  }),
+  group('Open-Source AI', {
+    items: [
+      group('Peeragogy Handbook AI', {
         collapsed: true,
-      items: [
-        { label: 'Village - Agent Collaboration', link: 'projects/village' },
-      ],
-    }),
-    { label: 'Peeragogy ChatBot', link: 'projects/peeragogy_bot' },
-  ],
-}),
-group('Theories and Experiments', {
-  items: [
-    { label: 'Cognitive Rhythm Draft', link: 'experiments/applied' },
-  ],
-}),
-group('Get Involved', {
+        items: [
+          { label: 'Village - Agent Collaboration', link: 'projects/village' },
+        ],
+      }),
+      { label: 'Peeragogy ChatBot', link: 'projects/peeragogy_bot' },
+    ],
+  }),
+  group('Theories and Experiments', {
+    items: [
+      { label: 'Cognitive Rhythm Draft', link: 'experiments/applied' },
+    ],
+  }),
+  group('Get Involved', {
     collapsed: true,
     items: [
-    { label: 'Join the Crew & Newsletter', link: 'core/join' },
-  ],
-}),
-
+      { label: 'Join the Crew & Newsletter', link: 'core/join' },
+    ],
+  }),
 ] satisfies StarlightUserConfig['sidebar'];

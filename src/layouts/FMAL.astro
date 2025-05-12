@@ -1,0 +1,51 @@
+import { Table, Thead, Tbody, Tr, Th, Td } from '@astrojs/react/components'; // Example using React components for table structure, adjust based on your needs
+
+const tableData = [
+  { fmal: 'LLMs as Cognitive Tools', pyragogy: 'Pyria as Epistemic Peer' },
+  { fmal: 'Adaptive Scaffolding', pyragogy: 'Learning Rhythm Assistant' },
+  { fmal: 'Reflective Co-creation', pyragogy: 'Cognitive Diary + MCP Loop' },
+  { fmal: 'Metacognition and Agency', pyragogy: 'Co-Creation Formula + Manifesto Principles 4, 8' },
+  { fmal: 'Ethics, Transparency, Explainability', pyragogy: 'Ethical Protocol + Principles 2, 5, 6' },
+  { fmal: 'New Learning Metrics', pyragogy: '4D Assessment Matrix' },
+  { fmal: 'Cognitive Extension', pyragogy: 'MCP-Core Agents as Extensions' },
+  { fmal: 'Learning Research Platform', pyragogy: 'Pyragogy Ecosystem' },
+  { fmal: 'Knowledge Co-Construction', pyragogy: 'Collaborative Authoring Frameworks' },
+  { fmal: 'Cognitive Load Redistribution', pyragogy: 'AI Semantic Agents + Human Creative Synthesis' },
+];
+---
+
+<h2>🔄 Comparative Table: FMAL ↔ Pyragogy Implementation</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FMAL Concept</th>
+      <th>Pyragogy Implementation</th>
+    </tr>
+  </thead>
+  <tbody>
+    {tableData.map((row) => (
+      <tr key={row.fmal}>
+        <td>{row.fmal}</td>
+        <td>{row.pyragogy}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+<style>
+  /* Optional: Add some light custom styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
