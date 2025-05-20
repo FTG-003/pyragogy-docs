@@ -18,6 +18,8 @@
     "@docsearch/js": "^3.9.0",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.4",
+    "@whyframe/astro": "^0.2.7",
+    "@whyframe/core": "^0.1.13",
     "astro": "^5.6.1",
     "astro-diagram": "^0.7.0",
     "astro-icon": "^1.1.5",

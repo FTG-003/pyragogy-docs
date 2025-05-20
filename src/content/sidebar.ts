@@ -33,12 +33,12 @@ export const sidebar = [
           { label: 'Village - Agent Collaboration', link: 'projects/village' },
         ],
       }),
-      { label: 'Peeragogy ChatBot', link: 'projects/peeragogy_bot' },
+      { label: 'Peeragogy ChatBot', link: 'projects/peeragogy' },
     ],
   }),
   group('Theories and Experiments', {
     items: [
-      { label: 'Cognitive Rhythm Draft', link: 'experiments/applied' },
+      { label: 'The Cognitive Rhythm Theory', link: 'experiments/applied' },
     ],
   }),
   group('Get Involved', {
