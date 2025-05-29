@@ -30,7 +30,7 @@ export const sidebar = [
       group('Peeragogy Handbook AI', {
         collapsed: true,
         items: [
-          { label: 'Village - Agent Collaboration', link: 'projects/village' },
+          { label: 'Village - Agent Collaboration', link: 'projects/blueprint' },
         ],
       }),
       { label: 'Peeragogy ChatBot', link: 'projects/peeragogy' },
