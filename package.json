@@ -12,12 +12,9 @@
   "dependencies": {
     "@astrojs/markdoc": "^0.14.1",
     "@astrojs/mdx": "^4.2.5",
-<<<<<<< HEAD
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/starlight": "^0.34.1",
-=======
     "@astrojs/starlight": "^0.34.3",
->>>>>>> 683c7f8f28d3d528f9186fcab932a9347e5e2376
     "@astrojs/starlight-markdoc": "^0.4.0",
     "@astrojs/starlight-tailwind": "^4.0.1",
     "@docsearch/js": "^3.9.0",
