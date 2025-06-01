@@ -5,15 +5,15 @@ import markdoc from '@astrojs/markdoc';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import tailwindcss from '@tailwindcss/vite';
+import partytown from '@astrojs/partytown'; // Importa partytown
 import { sidebar } from './src/content/sidebar';
 
 export default defineConfig({
   integrations: [
+    partytown(), // Aggiungi partytown alle integrazioni
     starlight({
       title: 'DOCS',
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' },
-               { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/' },
-              ],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' }],
       customCss: [
         './src/styles/global.css',
       ],
@@ -23,7 +23,7 @@ export default defineConfig({
       },
       sidebar,
       markdown: {
-        headingLinks: true, // ✅ Ora solo headingLinks o future simple options
+        headingLinks: true,
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -35,21 +35,18 @@ export default defineConfig({
             href: 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css',
           },
         },
-        {
+        { // Script Plausible
           tag: 'script',
           attrs: {
+            type: 'text/partytown', // Tipo corretto per Partytown
             defer: true,
-            'data-domain': 'docs.pyragogy.org',
-            src: 'https://plausible.io/js/script.js'
-          }
+            src: 'https://plausible.pyragogy.org/script.js',
+            'data-website-id': 'd90d3e11-0645-4066-b381-522a83989d75',
+          },
         }
       ],
     }),
     markdoc(),
-    mdx({
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    }),
   ],
   vite: {
     plugins: [tailwindcss()],
