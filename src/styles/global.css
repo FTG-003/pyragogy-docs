@@ -34,3 +34,11 @@
     --color-gray-900: var(--color-zinc-900);
     --color-gray-950: var(--color-zinc-950);
 }
+
+.centered-img {
+  text-align: center;
+}
+.centered-img img {
+  display: inline-block;
+  max-width: 100%;
+}

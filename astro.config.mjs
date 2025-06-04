@@ -13,7 +13,9 @@ export default defineConfig({
     partytown(), // Aggiungi partytown alle integrazioni
     starlight({
       title: 'DOCS',
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' },
+               { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/' },
+      ],
       customCss: [
         './src/styles/global.css',
       ],
