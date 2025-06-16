@@ -14,7 +14,7 @@ export default defineConfig({
     starlight({
       title: 'DOCS',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' },
-               { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/' },
+               { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/about/' },
       ],
       customCss: [
         './src/styles/global.css',

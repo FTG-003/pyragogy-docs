@@ -18,7 +18,7 @@ export const sidebar = [
       { label: 'Cognitive Models', link: 'core/models' },
       { label: 'Pyragogy Manifesto', link: 'core/manifesto' },
       { label: 'Foundational Principles', link: 'core/principi' },
-      { label: 'Evolution Timeline', link: 'core/timeline' },
+      { label: 'Project Evolution Timeline', link: 'core/timeline' },
     ],
   }),
   group('Research Meets Practice', {
