@@ -1,130 +1,145 @@
 ---
 title: "Pyragogy AI Village Blueprint"
 description: "The official guide to the human–AI cognitive village: architecture, principles, agents, and roadmap."
-published: 2025-05-28
+published: 2025-06-22
 category: Blueprint
-tags: [Blueprint, AI Village, Peeragogy, n8n, Cognitive Rhythm, Open Source]
-author: "Fabrizio Terzi"
+tags: [Blueprint, AI Village, Peeragogy, n8n, Cognitive Rhythm, Open Source, Handbook]
+author: "The Pyragogy Collective"
 draft: false
 ---
 
-
-> **Version 1.0 – May 2025**  
-> An experimental ecosystem for collaborative human–AI learning.  
-> [GitHub Repo](https://github.com/pyragogy/Blueprint_village)
+> **Version 1.1 – June 2025**  
+> A living infrastructure for collaborative human–AI learning and handbook co-creation.  
+> [Handbook Repo](https://github.com/pyragogy/pyragogy-handbook-n8n-workflow)
 
 ---
 
 ## 🚀 Vision
 
-**Pyragogy AI Village** is a co-creation and continuous learning environment where humans and AI agents truly collaborate as peers, generating knowledge through orchestrated and transparent workflows.
+**Pyragogy AI Village** is a co-creation environment where humans and AI agents collaborate as peers to generate knowledge, orchestrate workflows, and build collective intelligence.
 
-Inspired by the [Pyragogy Manifesto](https://docs.pyragogy.org/core/why/) and the Cognitive Rhythm Theory, the Village goes beyond the “AI as a tool” paradigm, embracing the co-evolution of human and artificial intelligence.
-
----
-
-## 🔑 Key Objectives
-
-- **Human–AI Collaboration:** Creative, transparent, and adaptive interaction between people and specialized agents.
-- **Optimal Cognitive Rhythm:** Synchronization and monitoring of shared cognitive processes.
-- **Emergent Knowledge:** Content that goes beyond the sum of its parts.
-- **Modularity & Adaptability:** Easily extensible system.
-- **Transparency & Traceability:** Every contribution is visible and recognized.
+The system is inspired by the [Pyragogy Manifesto](https://docs.pyragogy.org/core/why/) and the [Cognitive Rhythm Theory](https://docs.pyragogy.org/experiments/applied/). It aims to support continuous, traceable, and symbiotic co-learning.
 
 ---
 
-## 🏗️ Village Architecture
+## 🔑 Core Principles
 
-- **n8n:** Orchestration of multi-agent workflows.
-- **PostgreSQL:** Data and contribution persistence & traceability.
-- **Grafana:** Monitoring and visualization of cognitive metrics.
-- **Nginx:** Web interface and reverse proxy.
+- **Human–AI Symbiosis** — Agents and humans co-create, not just co-exist.
+- **Cognitive Rhythm Awareness** — Measure and adapt based on interaction dynamics.
+- **Transparency & Traceability** — Every contribution is tracked, reviewed, and valued.
+- **Emergent Knowledge** — Outcomes greater than the sum of inputs.
+- **Modularity** — Everything is replaceable, remixable, forkable.
 
-### **Specialized Agents:**
-- Meta-orchestrator
-- Summarizer
-- Synthesizer
-- Peer Reviewer
-- Sensemaking Agent
-- Prompt Engineer
-- Onboarding/Explainer
+---
+
+## 🏗️ System Architecture
+
+| Layer | Tools |
+|-------|-------|
+| **Orchestration** | n8n multi-agent workflows |
+| **Persistence** | PostgreSQL, GitHub |
+| **Visualization** | Grafana, D3.js |
+| **API/UX** | Nginx reverse proxy, webhooks |
+| **Monitoring** | Cognitive Rhythm Metrics |
+
+### 🧠 Specialized Agents
+
+- Meta-orchestrator  
+- Summarizer  
+- Synthesizer  
+- Peer Reviewer  
+- Prompt Engineer  
+- Sensemaking Agent  
+- Onboarding/Explainer  
 - Archivist
 
 ---
 
-## 🔄 Operational Workflow
+## 🔄 Core Workflow
 
-1. **Input:** Requests/ideas via UI, API, or webhook.
-2. **Orchestration:** The Meta-orchestrator sets the sequence of agents.
-3. **Processing:** Each agent acts according to its role.
-4. **Persistence:** All results are saved (DB + GitHub).
-5. **Feedback:** The system generates feedback and enables continuous iteration.
+1. **Input** — Idea, prompt, or draft via UI or webhook
+2. **Orchestration** — Agent chain decided by the Meta-orchestrator
+3. **Processing** — Each agent performs its function
+4. **Persistence** — Output saved to GitHub and PostgreSQL
+5. **Reflection** — Feedback, metrics, and improvement loops
 
-> **Core Formula:**  
 > `RC(H,A,t) = f(ΔΦH(t), ΔΦA(t), S(t), R(t))`  
-> *(Cognitive Rhythm: a function of human phase, AI phase, synchronization, and resonance)*
+> *(Cognitive Rhythm: human + AI phase shifts, synchronization, and resonance)*
 
 ---
 
-## 📊 Monitoring & Dashboard
+## ✍️ Handbook Co-Creation Blueprint
+
+We developed a working, open-source system for **collaboratively writing the Pyragogy Handbook** with AI agents and human review.
+
+- [📘 Blueprint article](https://pyragogy.org/posts/1fb7615b/)
+- [📁 GitHub repository](https://github.com/pyragogy/pyragogy-handbook-n8n-workflow)
+- [⚙️ n8n public template](https://n8n.io/workflows/4904-generate-collaborative-handbooks-with-gpt-4o-multi-agent-orchestration-and-human-review/)
+
+This setup enables content generation, iterative revision, cognitive traceability, and markdown publishing — all under human–AI supervision.
+
+---
+
+## 📊 Metrics & Visualization
+
+Real-time dashboards include:
 
 - **Cognitive Rhythm Index**
 - **Synchronization Index**
 - **Resonance Meter**
-- **Timeline, Agent Activity, Collaboration Map**
+- **Agent Activity Timeline**
+- **Contribution Maps**
 
-Real-time visualizations with Grafana, D3.js, or custom widgets.
-
----
-
-## 🧩 Extensibility
-
-- Add new agents via n8n (prompt, parameters, connections).
-- Customize prompts, roles, outputs.
-- Integrate with GitHub, Notion, Obsidian, external APIs.
+Tools: Grafana, Prometheus, custom widgets.
 
 ---
 
-## 📚 Use Cases
+## 🧩 Extensibility & Use Cases
 
-- **Collaborative content creation:** Manuals, guides, curricula.
-- **Research and synthesis:** Analysis and gap detection.
-- **Assisted learning:** Personalized AI tutoring.
-- **Cognitive experimentation:** New patterns of human–AI interaction.
+- 🧠 **Add new agents** by cloning nodes in n8n
+- 📚 **Generate manuals, guides, learning paths**
+- 🔬 **Analyze knowledge gaps or cognitive patterns**
+- 👥 **Run facilitated OST+AI sessions**
+- 📡 **Connect to Notion, Obsidian, external APIs**
 
 ---
 
 ## 🛠️ Deployment
 
-- **Docker stack:** n8n, PostgreSQL, Grafana, Nginx.
-- **Minimum requirements:** 4GB RAM, 2 vCPU+, Docker Compose, OpenAI API key, GitHub token (optional).
-- **Modes:** Cloud or On-Premise.
+- Docker-based setup: `n8n`, `PostgreSQL`, `Grafana`, `Nginx`
+- Minimal requirements: 4GB RAM, 2 vCPU+, Docker Compose
+- Supports: local development, private server, cloud deploy
 
 ---
 
-## 🗺️ Roadmap & Future
+## 🗺️ Roadmap
 
-- Advanced agents (memory, vertical domains, multimodality)
-- Adaptive and predictive Cognitive Rhythm
-- Advanced user interfaces & customizable dashboards
-- Integration with open source models (Llama, Mistral…)
-- Advanced semantic analysis
-
----
-
-## 📎 Resources
-
-- [Blueprint_village on GitHub](https://github.com/pyragogy/Blueprint_village)
-- [Pyragogy Manifesto](https://docs.pyragogy.org/core/why/)
-- [Cognitive Rhythm Theory](https://docs.pyragogy.org/experiments/applied/)
+- [ ] Advanced AI agent memory + planning
+- [ ] Adaptive dashboards for learners and facilitators
+- [ ] Open source LLM support (Mistral, LLaMA)
+- [ ] Scalable co-editing interface with feedback loops
+- [ ] Publishing integrations (Wikibooks, MDX, EPUB)
 
 ---
 
-## 🤝 Join the Village!
+## 🤝 Join the Village
 
-**Pyragogy AI Village is an open project.**  
-Want to add an agent, improve the docs, or suggest new use cases?  
-> **Open an issue on GitHub, fork, contribute, or propose new ideas—this village grows with every participant!**
+This project is open to all who believe in **peer learning**, **AI-human collaboration**, and **radical transparency**.
 
+- 🚀 Suggest a use case  
+- ✍️ Contribute to the handbook  
+- 🧪 Test a new agent  
+- 📬 Contact us at: **[info@pyragogy.org](mailto:info@pyragogy.org)**
 
+> *This is a handbook written by a village — not a guru.*  
+> *And this village is made of humans, agents, and intention.*
 
+---
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 2rem; margin-bottom: 2rem;">
+  <iframe 
+    src="https://n8n.io/workflows/4904-generate-collaborative-handbooks-with-gpt-4o-multi-agent-orchestration-and-human-review/" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+    loading="lazy"
+    allowfullscreen
+  ></iframe>
+</div>
