@@ -22,11 +22,13 @@ export const sidebar = [
     ],
   }),
   group('Research Meets Practice', {
+    collapsed: true,
     items: [
       { label: 'Pyragogy Meets FMAL', link: 'projects/pyragogy-fmal' },
     ],
   }),
   group('Open-Source AI', {
+    collapsed: true,
     items: [
       group('Peeragogy Handbook AI', {
         collapsed: true,
@@ -38,12 +40,12 @@ export const sidebar = [
     ],
   }),
   group('Theories and Experiments', {
+    collapsed: true,
     items: [
       { label: 'The Cognitive Rhythm Theory', link: 'experiments/applied' },
     ],
   }),
   group('Get Involved', {
-    collapsed: true,
     items: [
       { label: 'Join the Crew & Newsletter', link: 'core/join' },
     ],

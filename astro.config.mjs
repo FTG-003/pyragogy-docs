@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 import partytown from '@astrojs/partytown'; // Importa partytown
 import { sidebar } from './src/content/sidebar';
 
+
 export default defineConfig({
   integrations: [
     partytown(), // Aggiungi partytown alle integrazioni
