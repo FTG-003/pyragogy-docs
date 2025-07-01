@@ -137,7 +137,7 @@ This project is open to all who believe in **peer learning**, **AI-human collabo
 ---
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 2rem; margin-bottom: 2rem;">
   <iframe 
-    src="https://n8n.io/workflows/4904-generate-collaborative-handbooks-with-gpt-4o-multi-agent-orchestration-and-human-review/" 
+    src="https://n8n.io/workflows/4904-pyragogy-ai-driven-handbook-generator-with-multi-agent-orchestration/" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
     loading="lazy"
     allowfullscreen
