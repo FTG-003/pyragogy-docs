@@ -28,7 +28,7 @@ export const sidebar = [
     ],
   }),
   group('Open-Source AI', {
-    collapsed: true,
+    collapsed: false,
     items: [
       group('Peeragogy Handbook AI', {
         collapsed: true,
@@ -37,6 +37,7 @@ export const sidebar = [
         ],
       }),
       { label: 'Peeragogy ChatBot', link: 'projects/peeragogy' },
+      { label: 'Pyragogy Library App', link: 'projects/app' },
     ],
   }),
   group('Theories and Experiments', {

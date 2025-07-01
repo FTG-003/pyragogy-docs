@@ -16,6 +16,8 @@ export default defineConfig({
       title: 'DOCS',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' },
                { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/about/' },
+               { icon: 'open-book', label: 'La Nostra App', href: 'https://library.pyragogy.org' },
+
       ],
       customCss: [
         './src/styles/global.css',
