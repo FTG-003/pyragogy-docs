@@ -49,6 +49,7 @@ export const sidebar = [
   group('Get Involved', {
     items: [
       { label: 'Join the Crew & Newsletter', link: 'core/join' },
+      { label: 'Citations & Recognition', link: '/citations' },
     ],
   }),
 ] satisfies StarlightUserConfig['sidebar'];

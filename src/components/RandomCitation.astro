@@ -1,0 +1,157 @@
+import { getCollection } from 'astro:content';
+
+// Get all citations and select a random one
+const citations = await getCollection('citations');
+const randomCitation = citations[Math.floor(Math.random() * citations.length)];
+
+if (!randomCitation) {
+  return null;
+}
+
+const { title, quote, authors, source, year, verified } = randomCitation.data;
+
+<div class="random-citation">
+  <div class="citation-header">
+    <span class="citation-icon">📚</span>
+    <span class="citation-label">Featured Citation</span>
+    {verified && <span class="verified-badge">✓ Verified</span>}
+  </div>
+  
+  <blockquote class="citation-quote">
+    "{quote.length > 200 ? quote.substring(0, 200) + '...' : quote}"
+  </blockquote>
+  
+  <div class="citation-meta">
+    <div class="citation-authors">
+      {authors.slice(0, 2).join(', ')}
+      {authors.length > 2 && ` et al.`}
+    </div>
+    <div class="citation-source">
+      {source}
+      {year && ` (${year})`}
+    </div>
+  </div>
+  
+  <a href="/citations" class="view-all-link">
+    View all citations →
+  </a>
+</div>
+
+<style>
+  .random-citation {
+    background: var(--sl-color-white);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .random-citation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--sl-color-accent), var(--sl-color-accent-high));
+  }
+
+  .citation-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--sl-color-text-light);
+  }
+
+  .citation-icon {
+    font-size: 1.2rem;
+  }
+
+  .citation-label {
+    font-weight: 600;
+    color: var(--sl-color-text);
+  }
+
+  .verified-badge {
+    background: var(--sl-color-green-6);
+    color: var(--sl-color-green-1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .citation-quote {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--sl-color-text);
+    margin: 1rem 0;
+    padding: 0;
+    border: none;
+    position: relative;
+  }
+
+  .citation-quote::before {
+    content: '"';
+    font-size: 2rem;
+    color: var(--sl-color-accent);
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    line-height: 1;
+  }
+
+  .citation-meta {
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    color: var(--sl-color-text-light);
+  }
+
+  .citation-authors {
+    font-weight: 600;
+    color: var(--sl-color-text);
+    margin-bottom: 0.25rem;
+  }
+
+  .view-all-link {
+    display: inline-block;
+    color: var(--sl-color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .view-all-link:hover {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
+  }
+
+  /* Dark mode support */
+  :global(.sl-theme-dark) .random-citation {
+    background: var(--sl-color-black);
+    border-color: var(--sl-color-gray-4);
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .random-citation {
+      padding: 1rem;
+    }
+
+    .citation-quote {
+      font-size: 0.9rem;
+    }
+
+    .citation-quote::before {
+      font-size: 1.5rem;
+      top: -0.25rem;
+      left: -0.25rem;
+    }
+  }
+</style> 

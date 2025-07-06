@@ -1,0 +1,124 @@
+---
+interface Props {
+  totalCitations: number;
+  verifiedCount: number;
+  yearsCovered: number;
+  topicsCount: number;
+}
+
+const { totalCitations, verifiedCount, yearsCovered, topicsCount } = Astro.props;
+---
+
+<section class="stats-section" aria-labelledby="stats-heading">
+  <div class="stats-container">
+    <h2 id="stats-heading" class="visually-hidden">Citation Statistics</h2>
+    <div class="stats-grid">
+      <div class="stat-card" role="region" aria-label="Total citations">
+        <div class="stat-number" aria-live="polite">{totalCitations}</div>
+        <div class="stat-label">Total Citations</div>
+      </div>
+      <div class="stat-card" role="region" aria-label="Verified citations">
+        <div class="stat-number" aria-live="polite">{verifiedCount}</div>
+        <div class="stat-label">Verified</div>
+      </div>
+      <div class="stat-card" role="region" aria-label="Years covered">
+        <div class="stat-number" aria-live="polite">{yearsCovered}</div>
+        <div class="stat-label">Years Covered</div>
+      </div>
+      <div class="stat-card" role="region" aria-label="Topics covered">
+        <div class="stat-number" aria-live="polite">{topicsCount}</div>
+        <div class="stat-label">Topics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats-section {
+    padding: 3rem 1rem;
+  }
+
+  .stats-container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #a78bfa;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #9ca3af;
+  }
+
+  /* Accessibility utilities */
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-card {
+      padding: 1rem;
+    }
+    
+    .stat-number {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    .stat-card {
+      transition: none;
+    }
+    
+    .stat-card:hover {
+      transform: none;
+    }
+  }
+</style> 

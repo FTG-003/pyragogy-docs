@@ -14,6 +14,19 @@ const otherDocsSchema = z.object({
   tags: z.array(z.string()).optional().nullable(),
 });
 
+const citationsSchema = z.object({
+  title: z.string(),
+  quote: z.string(),
+  authors: z.array(z.string()),
+  source: z.string(),
+  doi: z.string().optional(),
+  url: z.string().url().optional(),
+  tags: z.array(z.string()),
+  year: z.number().optional(),
+  publicationType: z.enum(['journal', 'conference', 'book', 'report', 'blog', 'news']).optional(),
+  verified: z.boolean().default(false),
+});
+
 const docsCollection = defineCollection({
   schema: ({ id }) => {
     if (id.startsWith('diario/diary/')) {
@@ -23,6 +36,11 @@ const docsCollection = defineCollection({
   }
 });
 
+const citationsCollection = defineCollection({
+  schema: citationsSchema,
+});
+
 export const collections = {
-  docs: docsCollection
+  docs: docsCollection,
+  citations: citationsCollection,
 };
