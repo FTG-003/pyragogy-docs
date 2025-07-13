@@ -77,7 +77,7 @@ export default defineConfig({
             'data-show-thoughts': 'off',
             // Contact & Display
             'data-support-email': 'info@pyragogy.org',
-            'data-no-sponsor': 'off',
+            'data-no-sponsor': 'on',
             'data-no-header': '',
           },
         },
