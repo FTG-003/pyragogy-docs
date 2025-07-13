@@ -52,31 +52,33 @@ export default defineConfig({
           tag: 'script',
           attrs: {
             src: 'https://any.pyragogy.org/embed/anythingllm-chat-widget.min.js',
+            defer: true,
+            // API Configuration
             'data-embed-id': '38e1bef4-6f2a-42ff-8003-36585a33c384',
             'data-base-api-url': 'https://any.pyragogy.org/api/embed',
+            // Assistant Identity
             'data-assistant-name': 'Pyragogy Assistant',
-            'data-title-text':'Pyragogy Assistant',
-            'data-default-messages': '"What is Pyragogy?", "How does cognitive rhythm theory work?", "What are the core principles of peer learning?", "How can I implement collaborative learning?", "What is the difference between traditional education and Pyragogy?"',
-            'data-temperature': '0.4',
-            'data-greeting': 'Hi! I’m the Pyragogy Assistant, how can I help you?',
-            'data-placeholder-text': 'Type your question here...',
-            'data-send-message-text': 'Send',
             'data-brand-image-url': 'https://raw.githubusercontent.com/FTG-003/yukina/refs/heads/main/public/logo.png',
-            'data-avatar-url': 'https://avatars.githubusercontent.com/u/3668236?v=4',
+            // AI Configuration
+            'data-temperature': '0.4',
+            'data-greeting': 'Hi! I\'m the Pyragogy Assistant, how can I help you?',
+            'data-default-messages': 'What is Pyragogy?, How does cognitive rhythm theory work?, What are the core principles of peer learning?, How can I implement collaborative learning?, What is the difference between traditional education and Pyragogy?',
+            // UI Text
+            'data-send-message-text': 'Send',
+            // Colors
             'data-button-color': '#6c5ce7',
             'data-button-text-color': '#1e1f1ff',
             'data-user-bg-color': '#23262f',
-            'data-user-text-color': '',
-            'data-bot-bg-color': '#dfe6e9',
+            'data-user-text-color': '#ffffff',
+            'data-assistant-bg-color': '#dfe6e9',
             'data-bot-text-color': '#2d3436',
+            // Behavior
             'data-open-on-load': 'off',
-            'data-support-email': 'info@pyragogy.org',
-            'data-session-ttl': '300',
-            'data-max-questions': '20',
             'data-show-thoughts': 'off',
+            // Contact & Display
+            'data-support-email': 'info@pyragogy.org',
             'data-no-sponsor': 'off',
             'data-no-header': '',
-            defer: true,
           },
         },
 
