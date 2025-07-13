@@ -47,3 +47,12 @@ img, .protected {
   pointer-events: none;
   user-select: none;
 }
+
+/* AnythingLLM Chatbot Integration */
+#anythingllm-chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  pointer-events: none;
+}
