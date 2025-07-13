@@ -64,7 +64,7 @@ export default defineConfig({
             'data-greeting': 'Hi! I\'m the Pyragogy Assistant, how can I help you?',
             'data-default-messages': 'What is Pyragogy?, How does cognitive rhythm theory work?, What are the core principles of peer learning?, How can I implement collaborative learning?, What is the difference between traditional education and Pyragogy?',
             // UI Text
-            'data-send-message-text': 'Send',
+            'data-send-message-text': 'Type your question here...',
             // Colors
             'data-button-color': '#6c5ce7',
             'data-button-text-color': '#1e1f1ff',
@@ -77,7 +77,7 @@ export default defineConfig({
             'data-show-thoughts': 'off',
             // Contact & Display
             'data-support-email': 'info@pyragogy.org',
-            'data-no-sponsor': 'on',
+            'data-no-sponsor': '',
             'data-no-header': '',
           },
         },
