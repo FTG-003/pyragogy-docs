@@ -43,7 +43,7 @@ export default defineConfig({
             type: 'text/partytown',
             defer: true,
             src: 'https://plausible.pyragogy.org/script.js',
-            'data-website-id': 'd90d3e11-0645-4066-b381-522a83989d75',
+            'data-website-id': '30351682-2bf0-45b3-84ca-0d859743f798',
           },
         },
         {

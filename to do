@@ -9,9 +9,6 @@ title: to do
 2- https://github.com/withastro/astro
 
 
-
-
-
 Apri il file del layout principale (es. src/layouts/BaseLayout.astro) e aggiungi il componente:
 
 astro
