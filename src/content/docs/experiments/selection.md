@@ -172,7 +172,7 @@ The question isn't whether education will evolve — it's whether we'll consciou
 
 ## Learn More
 
-📚 **Read the full research**: [Cognitive Intraspecific Selection in Education (Zenodo)](https://zenodo.org/records/16961291)
+📚 **Read the full research**: [Cognitive Intraspecific Selection in Education (Zenodo)](https://zenodo.org/records/16962409)
 
 <!-- 🎓 **Join a workshop**: Check our [events calendar](/events) for upcoming pyragogic training
 
