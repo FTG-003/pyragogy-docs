@@ -28,7 +28,7 @@ export const sidebar = [
     ],
   }),
   group('Open-Source AI', {
-    collapsed: false,
+    collapsed: true,
     items: [
       group('Peeragogy Handbook AI', {
         collapsed: true,
@@ -41,8 +41,9 @@ export const sidebar = [
     ],
   }),
   group('Theories and Experiments', {
-    collapsed: true,
+    collapsed: false,
     items: [
+      { label: 'Intraspecific Selection in Education', link: 'experiments/selection' },
       { label: 'The Cognitive Rhythm Theory', link: 'experiments/applied' },
     ],
   }),
