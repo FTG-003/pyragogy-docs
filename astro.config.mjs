@@ -10,7 +10,7 @@ import { sidebar } from './src/content/sidebar';
 import sitemap from '@astrojs/sitemap'; // Sitemap plugin
 
 export default defineConfig({
-  site: 'https://pyragogy.org', // Dominio principale per sitemap e link assoluti
+  site: 'https://docs.pyragogy.org', // Dominio corretto per sitemap e link assoluti
   integrations: [
     partytown(),
     starlight({
@@ -59,11 +59,12 @@ export default defineConfig({
             'data-greeting': 'Hello there! I\'m Pyria, your AI co-learning agent from the Pyragogy AI Village. What would you like to explore or learn about today?',
             'data-default-messages': 'What is Pyragogy?, How does collective learning work?, Can we co-design a learning activity?, What are the principles of UDL?',
             'data-chat-icon': 'chatBubble',
+            'data-iframe-title': 'Pyria, AI Co-Learning Agent Chat', // Aggiunge un titolo per l'accessibilità
             'data-send-message-text': 'Type your question here...',
             'data-button-color': '#6c5ce7',
-            'data-button-text-color': '#1e1f1ff',
+            'data-button-text-color': '#1e1f1f',
             'data-user-bg-color': '#23262f',
-            'data-user-text-color': '#101115f',
+            'data-user-text-color': '#101115',
             'data-assistant-bg-color': '#dfe6e9',
             'data-bot-text-color': '#2d3436',
             'data-main-color': '#1a1c21',
@@ -71,7 +72,6 @@ export default defineConfig({
             'data-show-thoughts': 'off',
             'data-support-email': 'info@pyragogy.org',
             'data-no-sponsor': 'false',
-            'data-no-header': '',
           },
         },
       ],

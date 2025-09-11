@@ -13,7 +13,7 @@ draft: false
 
 *What you're about to read is not a definitive treatise. It's not the final solution to education's problems. It is, instead, something more honest and, I hope, more useful: it's the beginning of a collective thought experiment.*
 
-*I'm Fabrizio, and this theory, – [**Cognitive Intraspecific Selection in Education**](https://zenodo.org/records/16961291)
+*I'm Fabrizio, and this theory, – [**Cognitive Intraspecific Selection in Education**](https://zenodo.org/records/16962409)
  – was born from a simple but persistent intuition: observing how ideas evolve in online learning communities, in discussion forums, in open source projects, I noticed something extraordinary. When people stop competing against each other and start having their ideas compete, magic happens. Collective intelligence emerges.*
 
 *I'm not an education revolutionary. I don't have a heartbreaking story to tell. I'm simply someone who has observed, reflected, and attempted to give form to a pattern I see repeated wherever there's true innovation: the best ideas aren't born from isolated minds in competition, but from collaborative minds that put their thoughts into constructive competition.*
