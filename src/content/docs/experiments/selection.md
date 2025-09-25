@@ -57,7 +57,7 @@ What if, instead of putting people in competition—with all their anxieties, in
 
 *This is not naïve utopia. It’s biology applied to learning.*
 
-## The Revolutionary Shift: From People to Ideas
+## The Shift: From People to Ideas
 
 **Cognitive Intraspecific Selection** proposes something audacious: What if we could harness the power of competition without destroying collaboration? The answer lies in a simple but profound shift — **let ideas compete while people cooperate**.
 
