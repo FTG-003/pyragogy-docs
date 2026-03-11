@@ -16,11 +16,9 @@ export default defineConfig({
     starlight({
       title: 'DOCS',
       social: [
-        { icon: 'comment-alt', label: 'Forum', href: 'https://village.pyragogy.org/' },
+        { icon: 'comment-alt', label: 'Forum', href: 'https://forum.pyragogy.org' },
         { icon: 'github', label: 'GitHub', href: 'https://github.com/FTG-003' },
-        { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/about/' },
-        { icon: 'open-book', label: 'La Nostra App', href: 'https://library.pyragogy.org' },
-      ],
+        { icon: 'rss', label: 'Blog', href: 'https://pyragogy.org/about/' },      ],
       customCss: ['./src/styles/global.css'],
       logo: { src: './src/assets/logo.svg', replacesTitle: true },
       sidebar,
