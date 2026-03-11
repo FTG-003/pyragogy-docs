@@ -1,91 +1,111 @@
 ---
-title: Welcome to ✨Pyragogy
-description: "Pyragogy: A living ecosystem for cognitive symbiosis between humans and AI in collaborative learning."
+title: Citation Index
+description: A verifiable index of academic and operational sources that explicitly reference the Pyragogy framework.
 i18nReady: true
 ---
 
-# Toward an Ecology of Cognitive Co-Creation
+## Scope and purpose
 
-## Introduction: 
+This page documents **verifiable occurrences of the term “Pyragogy”** in academic, scholarly, and operational sources.
 
-In a world where **68% of educators** report a gap between digital tools and pedagogical needs ([OECD, 2023](https://oecd.org)), Pyragogy emerges as a transformative response. Not merely a method, but a **living ecosystem** where humans and AI collaborate to:
+It does not aim to:
+- promote adoption
+- infer conceptual influence
+- evaluate impact
 
-- **Transcend transmission models** through egalitarian dialogue ([Meta-Learn project](https://meta-learn.org))
-- **Regenerate intrinsic motivation**, as demonstrated by MIT’s study on AI-mediated peer-to-peer platforms ([MIT Study](https://doi.org/10.1162/qss_a_00232))
+Its sole function is **epistemic traceability**.
 
-QQQ INSERT INFOGRAPHIC: Comparative engagement data in traditional vs. pyragogical environments -->
+---
 
-## Historical Roots: An Evolutionary Timeline
+## Selection criteria
 
-1. **Pedagogy: The Monologue of Knowledge (5th Century BCE)**  
-   Modern example: Static MOOC platforms like edX.  
-   Limitation: Unidirectional approach.
+An entry appears on this page **only if**:
 
-2. **Andragogy: Centering the Adult (1970s)**  
-   Innovation: Malcolm Knowles introduces self-direction.  
-   Modern paradox: Corporate courses co-opting the model (e.g., Udemy Business).
+- the term *Pyragogy* (or its direct linguistic variants, e.g. «пирагогика») is explicitly present in the source text
+- the source can be independently accessed and verified
+- the context of usage can be clearly identified
 
-3. **Heutagogy: The Self-Determination Revolution (2000s)**  
-   Exemplar: GitHub’s informal learning communities.
+Sources are grouped by **origin**, not by perceived importance.
 
-4. **Peeragogy: The Wisdom of Networks (2012)**  
-   Measurable success: Wikipedia reduces systemic errors by 40% compared to traditional encyclopedias.
+---
 
-5. **Pyragogy: The Symbiotic Symphony (2020s)**  
-   Current prototype: The NeuroSync Lab, where neural networks and study groups co-design dynamic curricula.
+## Independent academic citations (secondary sources)
 
-QQQ INSERT INTERACTIVE TIMELINE WITH EXTERNAL RESOURCE LINKS -->
+These publications are authored independently from the Pyragogy project and reference the term explicitly.
 
-## Anatomy of a Name: Conceptual Ethnography
+### From Classical Pedagogy to Education 4.0: Continuity of Methodology, Approaches and Principles (2022)
 
-### Structured Etymology
+- **Author:** Ainur Mynbayeva  
+- **Publication:** *Journal of Educational Sciences, Al-Farabi Kazakh National University*  
+- **Language:** Russian (term used: «пирагогика»)  
+- **URL:** https://bulletin-pedagogic-sc.kaznu.kz/index.php/1-ped/article/view/609  
 
-**Pyra (πῦρ):** Not just physical fire, but transformative energy, akin to simulated annealing algorithms applied to education.
+> Discusses *pyragogy* («пирагогика») as part of the Education 4.0 paradigm, distinguishing it from pedagogy, andragogy, and heutagogy, and analysing learner responses to pyragogical principles.
 
-**Agōgia (ἀγωγία):** A process of mutual guidance, inspired by bell hooks’ circular mentorship models (*Teaching to Transgress*).
+---
 
-### The Symbolism of π
+### Exploring heutagogy, knowledge management, and rhizomatic learning approaches in Master's degree programs (2024)
 
-- **Adaptive Cycles:** Integrates the Plan-Do-Study-Act framework into digital contexts.
-- **Dynamic Equilibrium:** Mirroring research on human-in-the-loop machine learning.
+- **Authors:** A. Mynbayeva, K. Yessenova, A. Karabutova  
+- **Publication:** *Scientific Herald of Uzhhorod University. Series “Physics”*  
+- **URL:** https://physics.uz.ua/web/uploads/pdf/2919-2928_Mynbayeva%20et%20al.pdf  
 
-QQQ INSERT DIAGRAM OF HUMAN-AI KNOWLEDGE FLOWS -->
+> References *pyragogy* as an extension of heutagogy within Education 4.0, positioning it as a theoretical basis for distance learning and postgraduate self-education.
 
-## Operational Architectures: From Theory to Practice
+---
 
-### PyraCore Framework (v0.6)
+### Perspectives of using VR to increase accessibility in distance education (2024)
 
-Key components:
+- **Authors:** V. Zinchenko et al.  
+- **Publication:** *Revista Eduweb*  
+- **URL:** https://www.researchgate.net/publication/381846550_Perspectives_of_using_vr_to_increase_accessibility_in_distance-education  
 
-- **Dialogic Module:** Tools for human-AI meaning negotiation (inspired by Habermas).
-  - Example: The Argos bot mediates ethical disputes in classrooms (200-student trial).
-- **Adaptive Engine:** Algorithms mimicking synaptic plasticity.
-  - Use case: Dynamic content adjustment for dyslexic learners.
+> Mentions *pyragogy* as a method of social learning based on collaboration, joint inquiry, and critical feedback in digital and virtual learning environments.
 
-### Symbiotic Evaluation System
+---
 
-Metrics:
+## Primary sources (author-originated)
 
-- **Reciprocity Coefficient (RC):** Measures parity in exchanges.
-- **Regeneration Index (RI):** Tracks co-evolution.
+The following sources originate within the Pyragogy project and are listed **for transparency**, not as independent validation.
 
-QQQ INSERT COMPARATIVE METRICS TABLE WITH SAMPLE DATA -->
+### The Cognitive Rhythm Theory — AI-Human Co-Creation, Education and Beyond (2025)
 
-## Challenges and Horizons: The Ethical Frontier
+- **Author:** Fabrizio Terzi  
+- **Type:** Conceptual white paper / preprint  
+- **Platform:** Pyragogy.org  
+- **URL:** https://pyragogy.org  
 
-### Monitored Risks
+> Formalizes a model of cognitive synchronization in human–AI co-creation, forming part of the theoretical basis of Pyragogy.
 
-- **Hyper-Optimization:** Drift toward quantitative goals over depth (reproducibility crisis).
-- **Agency Erosion:** Study on initiative loss in hyper-mediated environments.
+---
 
-### Mitigation Protocols
+### Cognitive Intraspecific Selection in Education: From Individualism to Collective Strength (2025)
 
-- **Pyra Ethics Checklist:** Adaptation of Asilomar AI Principles.
-- **Hybrid Committees:** Human-AI parity in working groups (OpenAI model).
+- **Author:** Fabrizio Terzi  
+- **Type:** Conceptual white paper / preprint  
+- **Platform:** Pyragogy.org  
+- **URL:** https://pyragogy.org  
 
-## 📖 References
+> Defines Pyragogy as an operational methodology for evolutionary peer-based learning focused on the selection and refinement of ideas.
 
-- UNESCO (2023). *Global Education Monitoring Report*. OECD Publishing.
-- Engeström, Y. (2016). *Studies in Expansive Learning*. Cambridge University Press.
-- hooks, b. (1994). *Teaching to Transgress: Education as the Practice of Freedom*. Routledge.
-- OECD (2021). *AI and the Future of Skills, Volume 1*. OECD Publishing.
+---
+
+## Operational and grey literature
+
+### Pyragogy AI-Driven Handbook Generator with Multi-Agent Orchestration (2024)
+
+- **Author:** Fabrizio Terzi  
+- **Type:** Workflow template / operational artifact  
+- **Platform:** n8n.io  
+- **URL:** https://n8n.io/workflows/4904-pyragogy-ai-driven-handbook-generator-with-multi-agent-orchestration/  
+
+> An operational implementation explicitly named “Pyragogy”, applying its principles within a human-in-the-loop, multi-agent AI workflow.
+
+---
+
+## Epistemic status
+
+Pyragogy is an emerging framework.
+
+As of the documented period, independent peer-reviewed citations are **limited but verifiable**.  
+This index is intentionally conservative and will evolve as additional external references appear.
