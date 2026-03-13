@@ -38,15 +38,6 @@ export default defineConfig({
         {
           tag: 'script',
           attrs: {
-            type: 'text/partytown',
-            defer: true,
-            src: 'https://plausible.pyragogy.org/script.js',
-            'data-website-id': '30351682-2bf0-45b3-84ca-0d859743f798',
-          },
-        },
-        {
-          tag: 'script',
-          attrs: {
             src: 'https://any.pyragogy.org/embed/anythingllm-chat-widget.min.js',
             defer: true,
             'data-embed-id': '38e1bef4-6f2a-42ff-8003-36585a33c384',
