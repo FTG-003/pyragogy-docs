@@ -25,6 +25,14 @@ export const sidebar = [
     collapsed: true,
     items: [
       { label: 'Pyragogy Meets FMAL', link: 'projects/pyragogy-fmal' },
+      group('Obliqo', {
+        collapsed: true,
+        items: [
+          { label: 'Overview', link: 'projects/obliqo/' },
+          { label: 'The method', link: 'projects/obliqo/method' },
+          { label: 'Oblique Peer Review (Paper)', link: 'projects/obliqo/paper' },
+        ],
+      }),
     ],
   }),
   group('Open-Source AI', {
