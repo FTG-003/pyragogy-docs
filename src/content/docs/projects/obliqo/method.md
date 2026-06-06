@@ -1,39 +1,55 @@
 ---
 title: The method
-description: How mechanical independence works in practice. Four blind readings and one synthesis.
+description: How blind independence works — and where it stops. The four readers, the synthesis layer, and the trap that agreement can carry.
 ---
 
-Most "multi-agent" review tools share more than they admit. The agents read in turns, with context built up across the conversation. The "disagreement" is choreography — the same model wearing different masks, drawing on the same latent reading of your text.
+Most "multi-agent" review tools share more than they admit. The agents take turns. Context builds across the conversation. The "disagreement" is choreography — the same model in four costumes, drawing on the same latent reading of your text.
 
-Obliqo doesn't do that. We don't claim to have solved the alignment of automated critique, but the mechanical bet is concrete.
+Obliqo doesn't do that. But before any of the wiring, one claim has to be true for the rest to mean anything: four blind readers agreeing on the same passage is not your verdict. It is your next question.
 
-## The bet
+## The architecture
 
-Four agents. Each one gets the same input — your draft, your URL, your text. None of them sees the others' output. None of them knows the others exist. The infrastructure routes them in parallel; the readings come back independently; we present all four to you side by side. Then a fifth layer reads the four and writes a synthesis brief.
+Four agent processes routed in parallel from the same input — your draft, your URL, your text. No shared session. No cross-process state. No prompt that knows the other three exist. Reports come back independent. A fifth process then reads all four and writes a synthesis brief.
 
-The friction is not produced by hostile prompting. It is what remains when four separate readings of the same text have not been coordinated. Sometimes they converge. Sometimes they don't. The shape of that *(non-)convergence* is what you read.
+That is the floor. It guarantees nothing more than it claims to guarantee: no choreographed roles, no agent reading the others' output mid-stream, no consensus-soothing baked into the runtime. What it does not guarantee — because the underlying models share training data — is that the four readings are epistemically independent. They aren't, completely. They can't be. Naming the limit is part of the method.
 
-## Four independent readings, then one synthesis
+## Four readers, four lenses
 
-Each reading has its own lens. No reader sees the others.
+Each reader runs against the full draft with its own brief:
 
-- **Critical Researcher** — checks factual grounding. Names overstatements, missing context, claims that need evidence. Points to sources when relevant.
-- **Resonance Amplifier** — identifies what already works: lines, frames, moves that carry the piece and should not be edited away.
-- **Hidden Assumption** — surfaces unstated premises. Not what the draft says, but what it silently requires the reader to accept.
-- **Complicit Editor** — cuts indulgence, trims attachment, pushes for clarity and force. Asks what to cut, what to move, where to land harder.
+- **Critical Researcher** — flags factual grounding. Names overstatements, missing context, claims that need a source.
+- **Resonance Amplifier** — points at what already works. Lines, frames, moves that carry the piece and should survive the edit.
+- **Hidden Assumption** — surfaces what the draft makes the reader accept without arguing for it.
+- **Complicit Editor** — the one that sounds like your harshest writing-group reader. Asks what to cut, what to move, where the prose is hiding behind itself.
 
-Four blind readings come back. Then a fifth layer reads the four and pulls their tensions into one usable verdict — without flattening them.
+The fifth process — call it the synthesizer — reads the four reports as one set and writes a synthesis brief on top.
+
+## The trap the agreement hides
+
+When all four readers agree on the same passage, one of two things is true:
+
+- The passage is load-bearing — the soft spot the writer was trying not to look at, and the four readings caught it independently.
+- The four are reading badly in the same direction — the failure mode the paper names *blind convergence*: agents trained on overlapping data inheriting overlapping priors, walking past the same problem in unison.
+
+From your seat, those look identical.
+
+The architecture does what it can about the first axis: no coordination, no contamination. It cannot do anything about the second. That part is on the reader. On you.
+
+This is also why the synthesizer doesn't render a verdict. It writes a brief, not a judgment.
 
 ## Reading the report
 
-What comes back has two layers.
+What you get back has two layers, and the order they're meant to be read in is the order this page presents them.
 
-The four readings sit side by side — each names what it saw, each stays its own voice. You read them as four people who never met.
+- **The four readings, side by side.** Each names what it saw, in its own voice. Read them first. Notice where they agree, notice where they don't, notice which one made you defensive.
+- **The synthesis brief.** One main tension. A **Revision Score** that measures urgency and effort separately, not "quality". One concrete next move. One open question only you can resolve.
 
-Then the synthesis brief: the main tension across the readings, a **Revision Score** that scores urgency and effort separately, one concrete next move, and one open question only you can resolve. The Revision Score is not a verdict on the draft. It is a measurement of how much you have to do and how soon. The four readings stay separate underneath — the synthesis names the tension without smoothing it away.
+The Revision Score is not a draft-grade. It is an estimate of how much work, and how soon. Two drafts with the same score can be very different drafts.
 
-## The limit of blind convergence
+The four readings stay separate underneath the synthesis. If the synthesis surprises you, go back to the four.
 
-When the four agents agree on everything, the signal is loud — but it isn't automatically correct. If all four are descendants of overlapping training data, they may share blind spots. They will be confidently in unison about the wrong thing.
+## What the method does not do
 
-This is the failure mode the [paper](/projects/obliqo/paper/) names directly. The agreement is data. What it means is harder.
+It does not tell you whether your draft is good. It surfaces structural pressure points before someone else does. Past that, the writer is on their own.
+
+This is the working hypothesis of the [paper](/projects/obliqo/paper/): that the useful unit of automated critique is not a score, and almost never an answer. It is a brief honest enough to be argued with. Whether you do is the rest of the work.

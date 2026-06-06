@@ -48,6 +48,24 @@ img, .protected {
   user-select: none;
 }
 
+.obliqo-logo {
+  display: block;
+  margin: 1.5rem auto 2.5rem;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+.obliqo-screenshot {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
 /* AnythingLLM Chatbot Integration */
 #anythingllm-chatbot-container {
   position: fixed;
