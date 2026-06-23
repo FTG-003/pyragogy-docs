@@ -24,6 +24,7 @@ export const sidebar = [
   group('Research Meets Practice', {
     collapsed: true,
     items: [
+      { label: 'The Pyragogy Syllabus', link: 'projects/syllabus' },
       { label: 'Pyragogy Meets FMAL', link: 'projects/pyragogy-fmal' },
       group('Obliqo', {
         collapsed: true,
