@@ -5,7 +5,7 @@ description: "A systematic, reproducible pipeline for stress-testing peer-learni
 
 ## What is UnPeeragogy?
 
-UnPeeragogy is an **evidence-grounded audit protocol** for peer-learning patterns. It systematically stress-tests the claims of the Peeragogy Handbook against real-world evidence — academic research, documented case studies, recognised phenomena — and computes the **tension** between what a pattern asserts and what the evidence supports.
+UnPeeragogy is an **evidence-grounded audit protocol** for peer-learning patterns. It systematically stress-tests the claims of the Peeragogy Handbook against real-world evidence — academic research, documented case studies, recognised phenomena, documented observations — and computes the **tension** between what a pattern asserts and what the evidence supports.
 
 It was built to close a loop that most social knowledge in the peer-production literature leaves open: theory without systematic feedback. The Peeragogy Handbook codifies patterns for peer learning, but those patterns were written by people who had time to write them, tested by people who had time to test them, and generalised far beyond the context where they were first observed. UnPeeragogy brings operational reality back into the theoretical corpus.
 
@@ -13,22 +13,24 @@ It was built to close a loop that most social knowledge in the peer-production l
 
 ## The Pipeline
 
-The audit was executed by a **multi-agent orchestration pipeline** with five specialised functions, each implemented as a dedicated agent:
+The audit was executed by a **multi-agent orchestration pipeline** with five analytical stages, coordinated by a dispatcher:
 
-### 1. Interpretation
+### 1. Interpretation (A1)
 Parses the theoretical claim of each pattern. What is it asserting? What conditions does it assume? What is left unspecified?
 
-### 2. Evidence Hunter
-Uses parametric knowledge to surface candidate evidence — known cases, research, phenomena — that may be relevant to the pattern's claim.
+### 2. Evidence Hunter (A2)
+Searches for candidate evidence — academic research, documented case studies, recognised phenomena, documented observations — relevant to the pattern's claim, drawing first from a curated corpus and falling back to parametric recall when the corpus is insufficient.
 
 ### 3. Grounding Gate
-Critical check: can this candidate actually be connected to a real source, an empirical case, or a documented observation? If not, it is rejected — regardless of how plausible the model made it sound.
+Critical hard filter: can each candidate be connected to a real source, an empirical case, or a documented observation? If not, it is rejected — regardless of how plausible it sounded. This is not an LLM stage — it is a deterministic verification function.
 
-### 4. Critical Analysis
+### 4. Critical Analysis (A3)
 Assesses what the grounded evidence means for the pattern's claim. Does it support, complicate, contradict, or leave the claim ambiguous?
 
 ### 5. Tension Computation
-Computes a raw tension delta between the theoretical claim and the evidence set. The tension is not a judgment of validity — it is a measure of observable friction.
+Computes a raw tension delta between the theoretical claim and the evidence set. This is a pure function — a deterministic calculation from verdict and phenomenon-type, not an LLM judgment. The tension is not a judgment of validity — it is a measure of observable friction.
+
+A final **synthesis stage (A5)** produces the structured vault entry with positive and negative operational rules.
 
 Every step is recorded. Every candidate has an identifier. Every source has a provenance trail. The full run produces an **audit trail** and a **reproducibility manifest**.
 
@@ -50,7 +52,7 @@ No pattern was dismissed as "simply wrong". Every pattern received at least one 
 The protocol implements a complete **Paragogical Action Review (PAR)** cycle: review what was supposed to happen, establish what is happening, determine what's right and wrong, document what was learned, and identify what should change going forward.
 
 ### 🔬 Multi-Agent Pipeline
-Six agents, five pipeline stages, one orchestrated run. Each stage has a distinct role and strict guardrails — the Grounding Gate, in particular, prevents hearsay from entering the evidence base.
+Four specialised LLM agents (A1–A3, A5) plus two structural stages (Grounding Gate, Tension Computation), coordinated by a single dispatcher. Each stage has a distinct role and strict guardrails — the Grounding Gate, in particular, prevents hearsay from entering the evidence base.
 
 ### 📊 Structured Vault Actions
 All 88 nodes produced structured vault actions with both **positive** and **negative** operational rules. Every entry is tagged with its provenance (Seed vs. Field Report) for transparency.
