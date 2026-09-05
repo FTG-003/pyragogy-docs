@@ -1,0 +1,107 @@
+---
+title: "UnPeeragogy: An Evidence-Grounded Audit Protocol"
+description: "A systematic, reproducible pipeline for stress-testing peer-learning patterns against empirical evidence. 88 nodes of the Peeragogy Handbook audited across 304 evidence items."
+---
+
+## What is UnPeeragogy?
+
+UnPeeragogy is an **evidence-grounded audit protocol** for peer-learning patterns. It systematically stress-tests the claims of the Peeragogy Handbook against real-world evidence — academic research, documented case studies, recognised phenomena — and computes the **tension** between what a pattern asserts and what the evidence supports.
+
+It was built to close a loop that most social knowledge in the peer-production literature leaves open: theory without systematic feedback. The Peeragogy Handbook codifies patterns for peer learning, but those patterns were written by people who had time to write them, tested by people who had time to test them, and generalised far beyond the context where they were first observed. UnPeeragogy brings operational reality back into the theoretical corpus.
+
+> **"The model may propose. The evidence must dispose."**
+
+## The Pipeline
+
+The audit was executed by a **multi-agent orchestration pipeline** with five specialised functions, each implemented as a dedicated agent:
+
+### 1. Interpretation
+Parses the theoretical claim of each pattern. What is it asserting? What conditions does it assume? What is left unspecified?
+
+### 2. Evidence Hunter
+Uses parametric knowledge to surface candidate evidence — known cases, research, phenomena — that may be relevant to the pattern's claim.
+
+### 3. Grounding Gate
+Critical check: can this candidate actually be connected to a real source, an empirical case, or a documented observation? If not, it is rejected — regardless of how plausible the model made it sound.
+
+### 4. Critical Analysis
+Assesses what the grounded evidence means for the pattern's claim. Does it support, complicate, contradict, or leave the claim ambiguous?
+
+### 5. Tension Computation
+Computes a raw tension delta between the theoretical claim and the evidence set. The tension is not a judgment of validity — it is a measure of observable friction.
+
+Every step is recorded. Every candidate has an identifier. Every source has a provenance trail. The full run produces an **audit trail** and a **reproducibility manifest**.
+
+## Results in Brief
+
+The first full-scale audit covered all **88 nodes** of the Peeragogy Handbook:
+
+- **304** evidence items across **52** unique entities
+- **50** distinct source URLs
+- **Source diversity metric:** 0.609
+- **Mean raw tension delta:** +0.027
+  <span class="text-sm text-stone-500 dark:text-stone-400">— the resultant of the current evidence set. The tension is real but not catastrophic. Some patterns hold under specific conditions; others show clear gaps between the theoretical claim and operational reality.</span>
+
+No pattern was dismissed as "simply wrong". Every pattern received at least one supporting observation and at least one complicating observation — which is exactly what a useful stress test should produce.
+
+## Features & Capabilities
+
+### 🔁 Full Audit Cycle
+The protocol implements a complete **Paragogical Action Review (PAR)** cycle: review what was supposed to happen, establish what is happening, determine what's right and wrong, document what was learned, and identify what should change going forward.
+
+### 🔬 Multi-Agent Pipeline
+Six agents, five pipeline stages, one orchestrated run. Each stage has a distinct role and strict guardrails — the Grounding Gate, in particular, prevents hearsay from entering the evidence base.
+
+### 📊 Structured Vault Actions
+All 88 nodes produced structured vault actions with both **positive** and **negative** operational rules. Every entry is tagged with its provenance (Seed vs. Field Report) for transparency.
+
+### 🧪 Reproducible by Design
+The pipeline is deterministic as a protocol: same prompt templates, same gate thresholds, same orchestration steps. A reproducibility manifest documents every parameter, every prompt template, and every model configuration used in the run.
+
+### 📜 Applicable Beyond Peeragogy
+The architecture is domain-agnostic by design. The pipeline can audit any corpus of social or procedural knowledge — though its generalizability beyond peeragogy remains to be tested.
+
+### 🌐 Open Source
+The entire pipeline is open-source, built to be forked, adapted, and re-run on other corpora.
+
+## The Full Report
+
+The complete PDF contains the pipeline methodology, the detailed results for each of the 88 nodes, and a section of conjectures for future research. It is the same document archived on Zenodo under a **CC Zero — Public Domain Dedication**.
+
+<object data="/docs/unpeeragogy/unpeeragogy-audit-v0.2.pdf" type="application/pdf" class="w-full rounded-lg border border-stone-300" style="width:100%; min-height:85vh;">
+  <p class="text-sm text-stone-500 dark:text-stone-400">
+    If the viewer doesn't start,
+    <a href="/docs/unpeeragogy/unpeeragogy-audit-v0.2.pdf" class="underline hover:text-(--color-accent)">download the PDF directly</a>
+    — it's the same file as the
+    <a href="https://zenodo.org/records/22309102" class="underline hover:text-(--color-accent)">Zenodo record</a>.
+  </p>
+</object>
+
+## What This Means
+
+The audit is not a conclusion. It is a starting point.
+
+The tension deltas tell us **where** to look, not **what** to conclude. A pattern with near-zero tension may not be "true" — it may simply lack sufficient evidence to challenge it. A pattern with high tension may not be "false" — it may operate well under conditions the corpus has not yet captured positively.
+
+What the audit **does** provide is a structured, reproducible, evidence-anchored map of where the Peeragogy corpus holds, where it frays, and where it would benefit from closer observation. And every tension value can be revised when new evidence arrives. The loop is not closed after a single run.
+
+## Quick Links
+
+| Resource | Link |
+|---|---|
+| Dedicated Audit Page | [unpeeragogy.pyragogy.org/audit](https://unpeeragogy.pyragogy.org/audit) |
+| Full Report (Zenodo) | [doi.org/10.5281/zenodo.22309102](https://doi.org/10.5281/zenodo.22309102) |
+| Pipeline Repository | [github.com/pyragogy/UnPeeragogy](https://github.com/pyragogy/UnPeeragogy) |
+| UnPeeragogy Protocol | [unpeeragogy.pyragogy.org/protocol](https://unpeeragogy.pyragogy.org/protocol) |
+| Background Blog — Part I | [blog.pyragogy.org/posts/2dd675a5](https://blog.pyragogy.org/posts/2dd675a5) |
+| Background Blog — Part II | [blog.pyragogy.org/posts/e5f507dd](https://blog.pyragogy.org/posts/e5f507dd) |
+| Peeragogy Handbook | [peeragogy.org](https://peeragogy.org) |
+| License | CC Zero — Public Domain |
+
+## Get Involved
+
+UnPeeragogy is built to be used, challenged, and improved. If you're applying peer-learning patterns in your own context — a classroom, a community, an open-source project — your field reports are the evidence that makes the audit meaningful over time.
+
+- **Submit a field report** via the [UnPeeragogy repository](https://github.com/pyragogy/UnPeeragogy)
+- **Discuss the protocol** on the [Pyragogy Forum](https://forum.pyragogy.org)
+- **Fork the pipeline** and run it on your own corpus

@@ -54,6 +54,7 @@ export const sidebar = [
     items: [
       { label: 'Intraspecific Selection in Education', link: 'experiments/selection' },
       { label: 'The Cognitive Rhythm Theory', link: 'experiments/applied' },
+      { label: 'UnPeeragogy Audit Protocol', link: 'experiments/unpeeragogy' },
     ],
   }),
   group('Get Involved', {
